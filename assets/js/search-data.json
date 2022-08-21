@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "First Markdown Post",
-            "content": "First Post - Meena . . Intro . Meena Annamalai’s first post for APCSA. . A list . A list I will fill in later: . something | something else | . ADD TITLE . ADD QUOTATION . . ADD ALERT …and… . . ADD INFO Some code . Python first: . # Prints &#39;hell world!&#39; print(&quot;hello world!&quot;) . Tables . smth smth . smthing | smthing | .",
+            "content": "First Post - Meena . . Intro . Meena Annamalai’s first post for APCSA. . A list . This new page is: . to show use of Markdown | and/or HTML | . . first post . Tools and Equipment: Week 0 Some Python code . # Prints &#39;first post&#39; print(&quot;first post&quot;) .",
             "url": "https://mann223.github.io/fastpages/markdown/2022/08/19/new-fastpage-post.html",
             "relUrl": "/markdown/2022/08/19/new-fastpage-post.html",
             "date": " • Aug 19, 2022"
@@ -73,7 +73,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "Meena’s fastpages site. This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://mann223.github.io/fastpages/about/",
           "relUrl": "/about/",
           "date": ""
