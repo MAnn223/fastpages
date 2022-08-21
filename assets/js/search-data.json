@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "An Example Markdown Post",
+            "title": "First Markdown Post",
             "content": "First Post - Meena . . Intro . Meena Annamalai’s first post for APCSA. . A list . A list I will fill in later: . something | something else | . ADD TITLE . ADD QUOTATION . . ADD ALERT …and… . . ADD INFO Some code . Python first: . # Prints &#39;hell world!&#39; print(&quot;hello world!&quot;) . Tables . smth smth . smthing | smthing | .",
             "url": "https://mann223.github.io/fastpages/markdown/2022/08/19/new-fastpage-post.html",
             "relUrl": "/markdown/2022/08/19/new-fastpage-post.html",
