@@ -6,36 +6,29 @@ categories: [markdown]
 title: First Markdown Post
 ---
 # First Post - Meena
-<!-- ![]({{ site.baseurl }}/images/blogPNG.png) -->
-<img src="blogPNG.png" alt="drawing" width="200"/>
+![]({{ site.baseurl }}/images/blogPNG.png)
+
 ## Intro
 
 **Meena Annamalai's** first post `for APCSA`.
 
 ## A list
 
-A list I will fill in later:
+This new page is:
 
-- something 
-- something else
+- to show use of Markdown
+- and/or HTML
 
-## ADD TITLE
 
-> ADD QUOTATION 
+{% include alert.html text="first post" %}
 
-{% include alert.html text="ADD ALERT" %}
+{% include info.html text="Tools and Equipment: Week 0" %}
 
-...and...
-
-{% include info.html text="ADD INFO" %}
-
-## Some code
-
-Python first:
+## Some Python code
 
 ```python
-# Prints 'hell world!'
-print("hello world!")
+# Prints 'first post'
+print("first post")
 ```
 
 <!-- Formatting text as YAML:
@@ -45,8 +38,8 @@ key: value
 - another_key: "another value"
 ``` -->
 
-## Tables
+<!-- ## Tables
 
 | smth | smth |
 |-|-|
-| smthing | smthing |
+| smthing | smthing | -->
