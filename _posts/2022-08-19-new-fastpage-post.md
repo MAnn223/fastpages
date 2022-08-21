@@ -3,10 +3,11 @@ toc: true
 layout: post
 description: First post (APCSA).
 categories: [markdown]
-title: An Example Markdown Post
+title: First Markdown Post
 ---
 # First Post - Meena
-![]({{ site.baseurl }}/images/blogPNG.png)
+<!-- ![]({{ site.baseurl }}/images/blogPNG.png) -->
+<img src="blogPNG.png" alt="drawing" width="200"/>
 ## Intro
 
 **Meena Annamalai's** first post `for APCSA`.
