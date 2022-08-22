@@ -281,9 +281,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .post-content { margin-bottom: 30px; }
 
-.post-content h1, .post-content h2, .post-content h3 { margin-top: 60px; }
-
-.post-content h4, .post-content h5, .post-content h6 { margin-top: 30px; }
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 { margin-top: 30px; }
 
 .post-content h2 { font-size: 1.75rem; }
 
@@ -429,7 +427,7 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-.language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
+.language-python + .language-plaintext { border-left: 1px solid #aed7f8; margin-left: 1rem !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #98dbfa; }
 
@@ -437,7 +435,7 @@ pre code { font-size: 15px !important; }
 
 .language-python + .language-plaintext pre { background-color: white !important; }
 
-.input_area pre, .input_area div { margin-bottom: 1.0rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #323443 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace; border-radius: 5px; font-size: 105%; }
+.input_area pre, .input_area div { margin-bottom: 1.0rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #8d97e6 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace; border-radius: 5px; font-size: 105%; }
 
 .output_area pre, .output_area div { margin-bottom: 1rem !important; margin-top: 0rem !important; padding-bottom: 0 !important; padding-top: 0 !important; }
 
