@@ -16,7 +16,7 @@ $dt-yellow: #f1fa8c;
 $dt-green-light: rgb(172, 229, 145);
 
 .language-python + .language-plaintext {
-    border-left: 1px solid grey;
+    border-left: 1px solid rgb(174, 215, 248);
     margin-left: 1rem !important;
 }
 
@@ -37,7 +37,7 @@ $dt-green-light: rgb(172, 229, 145);
     margin-top:1.5rem !important;
     padding-bottom:0 !important;
     padding-top:0 !important;
-    background: #323443 !important;
+    background: #8d97e6 !important;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace;
