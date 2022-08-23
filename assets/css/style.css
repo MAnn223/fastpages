@@ -329,7 +329,7 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 
 .page-content { -webkit-font-smoothing: antialiased !important; text-rendering: optimizeLegibility !important; font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important; }
 
-.post-content p, .post-content li { font-size: 20px; color: #515151; }
+.post-content p, .post-content li { font-size: 20px; color: #c76bd3; }
 
 .post-link { font-weight: normal; }
 
@@ -431,9 +431,9 @@ pre code { font-size: 15px !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #98dbfa; }
 
-.language-python + .language-plaintext code { background-color: white !important; }
+.language-python + .language-plaintext code { background-color: #a6eca0 !important; }
 
-.language-python + .language-plaintext pre { background-color: white !important; }
+.language-python + .language-plaintext pre { background-color: #9df5b0 !important; }
 
 .input_area pre, .input_area div { margin-bottom: 1.0rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #8d97e6 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace; border-radius: 5px; font-size: 105%; }
 
@@ -441,7 +441,7 @@ pre code { font-size: 15px !important; }
 
 .input_area pre { border-left: 1px solid lightcoral; }
 
-.output_area pre { border-left: 1px solid grey; margin-left: 1rem !important; font-size: 16px; }
+.output_area pre { border-left: 1px solid #bd98f8; margin-left: 1rem !important; font-size: 16px; }
 
 .code_cell table { width: auto; }
 
