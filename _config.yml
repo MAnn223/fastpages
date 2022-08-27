@@ -48,7 +48,11 @@ use_math:
 # Set this to true to display the summary of your blog post under your title on the Home page.
 show_description: true
 
+<<<<<<< HEAD
 # Set this to true to display image previews on home page, if they exist #changed
+=======
+# Set this to true to display image previews on home page, if they exist
+>>>>>>> a88e5e20f8da7f6d1395929ed8d5b536c7b0779d
 show_image: true
 
 # Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
