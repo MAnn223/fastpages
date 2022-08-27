@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -169,18 +169,19 @@ window.onload = wrap_img;
 
             <span class="c1">// get course</span>
             <span class="n">input</span> <span class="o">=</span>  <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter a course, type 0 to exit: "</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"\nEnter a course, type 0 to exit: "</span><span class="p">);</span>
             <span class="cm">/** Wrapper class object string is used here since the user enters the course name **/</span>
             <span class="n">String</span> <span class="n">course</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">course</span><span class="p">);</span>
+            <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">course</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"0"</span><span class="p">))</span> <span class="p">{</span>
-                <span class="c1">//exitProgram = true; </span>
+                <span class="n">exitProgram</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> 
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Bye!"</span><span class="p">);</span>
                 <span class="k">break</span><span class="p">;</span>
             <span class="p">}</span>
             <span class="c1">//compound assignment operator used here - the result is that the count is increased by 1 each time the loop runs</span>
             <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
-            <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+            
 
             <span class="c1">// get credits</span>
             <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
@@ -238,12 +239,15 @@ window.onload = wrap_img;
 
         <span class="p">}</span>
         
-        <span class="c1">//here the primitive data type double is used since the the total grade pts divided by the total attempted credits will not always be a whole number</span>
-        <span class="c1">//casting is also used for this reason as both variables were originally integers</span>
-        <span class="kt">double</span> <span class="n">gpa</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">totalGradePoints</span> <span class="o">/</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">totalAttemptedCredits</span><span class="p">;</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Your GPA is: "</span> <span class="o">+</span> <span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">(</span><span class="n">gpa</span><span class="p">));</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Bye! Thank you for using GPA Calculator"</span><span class="p">);</span>
-        
+        <span class="c1">//here the Primitive data type boolean is used since I only want the final gpa to be shown if the user doesn't exit the program</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">exitProgram</span> <span class="o">==</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">//here the primitive data type double is used since the the total grade pts divided by the total attempted credits will not always be a whole number</span>
+            <span class="c1">//casting is also used for this reason as both variables were originally integers</span>
+            <span class="kt">double</span> <span class="n">gpa</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">totalGradePoints</span> <span class="o">/</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">totalAttemptedCredits</span><span class="p">;</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Your GPA is: "</span> <span class="o">+</span> <span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">(</span><span class="n">gpa</span><span class="p">));</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Bye! Thank you for using GPA Calculator"</span><span class="p">);</span>
+        <span class="p">}</span>
+            
 
     <span class="p">}</span>
 <span class="p">}</span>
@@ -263,16 +267,19 @@ window.onload = wrap_img;
 <pre>Welcome to GPA Calculator
 Code by Meena Annamalai
 How many course would you like to enter? 3
-Enter a course, type 0 to exit: bio
-Enter the number of credits for that course: 3
+
+Enter a course, type 0 to exit: CS
+Enter the number of credits for that course: 4
 Enter the letter grade you got: A
-Enter a course, type 0 to exit: chem
-Enter the number of credits for that course: 3
-Enter the letter grade you got: F
-Enter a course, type 0 to exit: death
-Enter the number of credits for that course: 2
+
+Enter a course, type 0 to exit: Bio
+Enter the number of credits for that course: 4
+Enter the letter grade you got: B
+
+Enter a course, type 0 to exit: English
+Enter the number of credits for that course: 4
 Enter the letter grade you got: C
-Your GPA is: 2.0
+Your GPA is: 3.0
 Bye! Thank you for using GPA Calculator
 </pre>
 </div>
