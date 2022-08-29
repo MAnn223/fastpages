@@ -2,21 +2,21 @@
   
     
         "post0": {
-            "title": "Code.org Lessons 1-5",
-            "content": "Code.org Week 1 Notes . Lesson 2 Java Lab . Class header and main method | &quot;ClassName&quot; should be replaced with the filename | .",
-            "url": "https://mann223.github.io/fastpages/jupyter/2022/08/29/codeorgNotes.html",
-            "relUrl": "/jupyter/2022/08/29/codeorgNotes.html",
-            "date": " • Aug 29, 2022"
+            "title": "Innovation - Primitives (Week 1)",
+            "content": "Innovation - Primitives (Week 1) . Code.org Lessons 1-5 . Code.org Notes | . Primitives Hacks . Create a Jupyter Notebook(s) using IJava kernel and that you could use it to capture key learning on Primitives. . GPA Calculator | . Bash Checks . Create a Jupyter Notebook using Bash and that you could use it to show that you have all the key tools installed. This should also be a Blog for your own personal memory. . Installation Checks | . College Board Learning . Each student captures information in Fastpages thinking … how they are going to capture information that will grow to 10 college board units … how they will recognize something as PBL vs College Board. . College Board Unit Notes | . Other Week 1 Updates . Update UI (change favicon.ico, etc.) | GPA Calculator | .",
+            "url": "https://mann223.github.io/fastpages/markdown/2022/08/28/innovation-primitives.html",
+            "relUrl": "/markdown/2022/08/28/innovation-primitives.html",
+            "date": " • Aug 28, 2022"
         }
         
     
   
     
         ,"post1": {
-            "title": "Innovation - Primitives (Week 1)",
-            "content": "Innovation - Primitives (Week 1) . Code.org Lessons 1-5 . Code.org Notes and Completion | . Primitives Hacks . Create a Jupyter Notebook(s) using IJava kernel and that you could use it to capture key learning on Primitives. . GPA Calculator | . Bash Checks . Create a Jupyter Notebook using Bash and that you could use it to show that you have all the key tools installed. This should also be a Blog for your own personal memory. . Installation Checks | . Other Week 1 Updates . Update UI (change favicon.ico, etc.) | GPA Calculator | .",
-            "url": "https://mann223.github.io/fastpages/markdown/2022/08/28/innovation-primitives.html",
-            "relUrl": "/markdown/2022/08/28/innovation-primitives.html",
+            "title": "College Board Unit Notes",
+            "content": "Unit 1: Primitive Types . Primitives Example: | GPA Calculator . | Primitive Types Boolean | Numeric Character char | . | Integral Integer byte | short | int | long | . | FLoating-point float | double | . | . | . | . | Wrapper Classes (Non-Primitive) String, Array, etc. | Like an object so has methods | . | Additional W1 Notes: Input Scanner input; | input = new Scanner(System.in); | System.out.print(&quot;Enter an integer: &quot;); | input.close(); | . | Output System.out.println(); | . | . | . Unit 2: Using Objects . Unit 3: Booleans Expressions and if Statements . Unit 4: Iteration . Unit 5: Writing Classes . Unit 6: Array . Unit 7: ArrayList . Unit 8: 2D Array . Unit 9: Inheritance . Unit 10: Recursion .",
+            "url": "https://mann223.github.io/fastpages/markdown/2022/08/28/collegeBoardLearning.html",
+            "relUrl": "/markdown/2022/08/28/collegeBoardLearning.html",
             "date": " • Aug 28, 2022"
         }
         
