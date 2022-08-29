@@ -6,6 +6,7 @@ categories: [markdown]
 title: Innovation - Primitives (Week 1)
 ---
 # Innovation - Primitives (Week 1)
+- [Issue on Github](https://github.com/MAnn223/fastpages/issues/3) 
 
 ## Code.org Lessons 1-5
 > Seeing that you understand how to use Code.org and that you used it to complement your learning on primitives.  Up to Lesson 5 in the OOP assignment.
