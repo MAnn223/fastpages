@@ -8,6 +8,7 @@ title: Innovation - Primitives (Week 1)
 # Innovation - Primitives (Week 1)
 
 ## Code.org Lessons 1-5
+> Seeing that you understand how to use Code.org and that you used it to complement your learning on primitives.  Up to Lesson 5 in the OOP assignment.
 - [Code.org Notes](https://mann223.github.io/fastpages/jupyter/2022/08/28/codeorgNotes-copy.html)
 ![]({{ site.baseurl }}/images/codeOrgL15.PNG)
 
@@ -21,9 +22,9 @@ title: Innovation - Primitives (Week 1)
 
 ## College Board Learning
 > Each student captures information  in Fastpages thinking ... how they are going to capture information that will grow to 10 college board units ... how they will recognize something as PBL vs College Board.
-- [College Board Unit Notes]()
+- [College Board Unit Notes](https://mann223.github.io/fastpages/markdown/2022/08/28/collegeBoardLearning.html)
 
 
 ## Other Week 1 Updates
 - Update UI (change favicon.ico, etc.)
-- GPA Calculator 
+
