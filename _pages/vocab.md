@@ -4,7 +4,7 @@ title: APCSA Vocab
 permalink: /vocab/
 ---
 
-# APCSA Vocab
+## Week 1
 
 - Objects have **attributes** which are characteristics of an object
 - A **class** is the blueprint that **objects** are created from. **Instantiating** an object calls the constrcutor to create an object.

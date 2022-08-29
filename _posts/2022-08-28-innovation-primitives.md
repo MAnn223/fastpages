@@ -26,9 +26,10 @@ title: Innovation - Primitives (Week 1)
 
 ## Fastpages Hacks
 > Add _pages/notes.md or _pages/vocab.md, insert between tags.md and about.md. Use this area to capture idea and terms throughout the year.
-- [vocab]()
->Consider using your home page for other subjects other than Computer Science. The searching and tagging features are very powerful and could help recall.
-- [stats unit 1 notes]()
+- [vocab](https://mann223.github.io/fastpages/vocab/)
+
+> Consider using your home page for other subjects other than Computer Science. The searching and tagging features are very powerful and could help recall.
+- [stats unit 1 notes](https://mann223.github.io/fastpages/markdown/2022/08/27/statsNotes.html)
 
 ## Other Week 1 Updates
 - Update UI (change favicon.ico, etc.)
