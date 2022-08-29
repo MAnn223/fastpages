@@ -24,6 +24,11 @@ title: Innovation - Primitives (Week 1)
 > Each student captures information  in Fastpages thinking ... how they are going to capture information that will grow to 10 college board units ... how they will recognize something as PBL vs College Board.
 - [College Board Unit Notes](https://mann223.github.io/fastpages/markdown/2022/08/28/collegeBoardLearning.html)
 
+## Fastpages Hacks
+> Add _pages/notes.md or _pages/vocab.md, insert between tags.md and about.md. Use this area to capture idea and terms throughout the year.
+- [vocab]()
+>Consider using your home page for other subjects other than Computer Science. The searching and tagging features are very powerful and could help recall.
+- [stats unit 1 notes]()
 
 ## Other Week 1 Updates
 - Update UI (change favicon.ico, etc.)
