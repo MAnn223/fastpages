@@ -21,3 +21,4 @@ title: Innovation - Primitives (Week 1)
 
 ## Other Week 1 Updates
 - Update UI (change favicon.ico, etc.)
+- GPA Calculator 
