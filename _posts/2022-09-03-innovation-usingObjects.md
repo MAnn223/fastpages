@@ -12,7 +12,7 @@ title: Innovation - Using Objects (Week 2)
 > Individuals show evidence of completing Code.org through Section 15 or beyond. Create a Fastpages blog complete with Screen Grabs that highlight key learnings.
 > Discuss creating and Using Objects
 > Discuss extends
-- [Code.org Notes]()
+- [Code.org Notes](https://mann223.github.io/fastpages/jupyter/2022/08/28/codeorgNotes-copy.html)
 ![]({{ site.baseurl }}/images/unit1Completion.PNG)
 
 ## Using Objects Hacks
@@ -21,7 +21,7 @@ title: Innovation - Using Objects (Week 2)
 - [Team Console Code]()
 
 ## Frontend Menu 
-
+- [Frontend Menu](https://mann223.github.io/fastpages/menu/frontend)
 ## Issues to fix
 - GUI on WSL
     - Issue with xhosts
