@@ -98,7 +98,7 @@ categories: [markdown]
     <div class="calculator-button" onclick="number('7')">7</div>
     <div class="calculator-button" onclick="number('8')">8</div>
     <div class="calculator-button" onclick="number('9')">9</div>
-    <div class="calculator-button" onclick="operation('*')">*</div>
+    <div class="calculator-button" onclick="operation('q')">q</div>
     <!--row 4-->
     <div class="calculator-button" onclick="clearCalc()">A/C</div>
     <div class="calculator-button" onclick="number('0')">0</div>
@@ -150,11 +150,12 @@ function operation (choice) { // function to input operations into the calculato
 }
 
 // Calculator
-function calculate (first, second) { // function to calculate the result of the equation
+function calculate (first, second, third) { // function to calculate the result of the equation
     let result = 0;
     switch (operator) {
-        case "+":
-            result = first + second;
+        case "q":
+            result = (9*10^9) * (first*second);
+            result = result / (third*third);
             break;
         case "-":
             result = first - second;
