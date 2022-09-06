@@ -14,3 +14,14 @@ title: Innovation - Using Objects (Week 2)
 > Discuss extends
 - [Code.org Notes]()
 ![]({{ site.baseurl }}/images/unit1Completion.PNG)
+
+## Using Objects Hacks
+- Built a console with our team 
+- [Team Console Repo](https://github.com/MAnn223/teamConsole)
+- [Team Console Code]()
+
+## Frontend Menu 
+
+## Issues to fix
+- GUI on WSL
+    - Issue with xhosts
