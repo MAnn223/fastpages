@@ -113,6 +113,8 @@ categories: [markdown]
 let output = document.getElementById("output");
 let operator = null;
 let firstNumber = null;
+let secondNumber = null;
+let thirdNumber = null;
 let nextReady = true;
 
 // Number action
@@ -140,6 +142,10 @@ function operation (choice) { // function to input operations into the calculato
         firstNumber = parseInt(output.innerHTML);
         nextReady = true;
         operator = choice;
+        nextReady = true;
+        secondNumber = parseInt(output.innerHTML);
+        nextReady = true;
+        secondNumber = parseInt(output.innerHTML);
         return; // exits function
     }
     // occurs if there is already a number stored in the calculator
@@ -153,7 +159,7 @@ function operation (choice) { // function to input operations into the calculato
 function calculate (first, second, third) { // function to calculate the result of the equation
     let result = 0;
     switch (operator) {
-        case "q":
+        case "Fe":
             result = (9*10^9) * (first*second);
             result = result / (third*third);
             break;
@@ -174,7 +180,7 @@ function calculate (first, second, third) { // function to calculate the result 
 
 // Equal action
 function equals () { // function used when the equals button is clicked; calculates equation and displays it
-    firstNumber = calculate(firstNumber, parseFloat(output.innerHTML));
+    firstNumber = calculate(firstNumber, secondNumber, thirdNumber);
     output.innerHTML = firstNumber.toString();
     nextReady = true;
 }
