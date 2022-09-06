@@ -98,7 +98,7 @@ categories: [markdown]
     <div class="calculator-button" onclick="number('7')">7</div>
     <div class="calculator-button" onclick="number('8')">8</div>
     <div class="calculator-button" onclick="number('9')">9</div>
-    <div class="calculator-button" onclick="operation('q')">q</div>
+    <div class="calculator-button" onclick="operation('Fe')">Fe</div>
     <!--row 4-->
     <div class="calculator-button" onclick="clearCalc()">A/C</div>
     <div class="calculator-button" onclick="number('0')">0</div>
