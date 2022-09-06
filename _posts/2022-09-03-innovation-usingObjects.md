@@ -17,11 +17,13 @@ title: Innovation - Using Objects (Week 2)
 
 ## Using Objects Hacks
 - Built a console with our team 
+    - Included code from rest of team, incorporated GPA Calculator, added an Electric Force calculator for AP Physics
 - [Team Console Repo](https://github.com/MAnn223/teamConsole)
 - [Team Console Code]()
 
 ## Frontend Menu 
 - [Frontend Menu](https://mann223.github.io/fastpages/menu/frontend)
+
 ## Issues to fix
 - GUI on WSL
     - Issue with xhosts
