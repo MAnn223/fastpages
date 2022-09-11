@@ -6,6 +6,7 @@ categories: [markdown]
 title: Focus/Habits 
 ---
 # Focus/Habits 
+![]({{ site.baseurl }}/images/brain.jpg)
 
 ## Psychology and the Good Life (Video)
 - Make time for gratitude 
