@@ -18,7 +18,11 @@ title: Focus/Habits
 - Family and friends
 - Opportunities to learn 
 - Good health 
+- Food
+- Music
 
 ## Goals
+- Develop CS Skills 
 - Time Management (stay on top of tasks, split todos evenly, etc.)
 - Get more sleep 
+- Maintain healthy habits
