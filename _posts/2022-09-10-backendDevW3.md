@@ -17,8 +17,10 @@ title: Backend Development (Week 3)
 > Deployment is required for API and other labs that we are intending to do shortly. Each individual needs to show success in deployment.
 
 - [meenaa.tk](http://meenaa.tk/)
-![AWS Deployment Success]({{ site.baseurl }}/images/awsDeploySuccess.PNG)
-![Certbot configuration]({{ site.baseurl }}/images/certbotInstallSS.PNG)
+![]({{ site.baseurl }}/images/awsDeploySuccess.PNG)
+
+![]({{ site.baseurl }}/images/certbotInstallSS.PNG)
+(Certbot configuration)
 
 ## Focus / Habits 
 > As discussed formerly. I would like to see a Blog you are creating that describe your own interest and skills. Purpose of blog, is to build something that could be used for Resume or LinkedIn. For points…
