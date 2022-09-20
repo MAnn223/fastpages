@@ -390,48 +390,11 @@ No more monkeys jumping on the bed
             <span class="s">"    | \\"</span><span class="p">,</span>
             <span class="s">"    a  a  "</span>    
         <span class="p">};</span>
+        
 <span class="n">curiousGeorge</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">"Curious George"</span><span class="p">;</span>
 <span class="n">curiousGeorge</span><span class="p">.</span><span class="na">age</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">curiousGeorge</span><span class="p">.</span><span class="na">name</span><span class="p">);</span>
-
-
-
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Monkey Jumpers Poem in Java Loopy"</span><span class="p">);</span>
-
-
-<span class="kt">int</span> <span class="n">monkeyCount</span> <span class="o">=</span> <span class="n">monkeys</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span>  
-<span class="p">{</span>
-
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="s">" little monkeys jumping on the bed..."</span><span class="p">);</span>
-
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>  
-
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">monkeyCount</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"       "</span> <span class="o">+</span> <span class="n">monkeys</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">+</span> <span class="s">"           "</span><span class="p">);</span>
-
-            <span class="c1">//this is new line between separate parts</span>
-            <span class="c1">//System.out.println();</span>
-        <span class="p">}</span>
-
-        <span class="c1">//this new line gives separation between stanza of poem</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
-    <span class="p">}</span>
-    <span class="c1">//Finish the rhyme </span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"One fell off and bumped his head"</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Mama called the doctor and the doctor said"</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"No more monkeys jumping on the bed\n"</span><span class="p">);</span>
-
-
-    <span class="n">monkeyCount</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c1">//out of all the loops, prints finishing messages</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"No more monkeys jumping on the bed"</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"0000000000000000000000000000000000"</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"             THE END              "</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The first monkey's name is "</span> <span class="o">+</span> <span class="n">curiousGeorge</span><span class="p">.</span><span class="na">name</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The monkey is "</span> <span class="o">+</span> <span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">(</span><span class="n">curiousGeorge</span><span class="p">.</span><span class="na">age</span><span class="p">)</span> <span class="o">+</span> <span class="s">" years old!"</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -444,8 +407,8 @@ No more monkeys jumping on the bed
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>hello
-Curious George
+<pre>The first monkey's name is Curious George
+The monkey is 4 years old!
 </pre>
 </div>
 </div>
