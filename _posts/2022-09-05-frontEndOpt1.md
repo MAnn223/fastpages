@@ -34,7 +34,7 @@ form.example input[type=text] {
     font-family: 'Poppins';
     font-style: italic;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 20px;
     line-height: 68px;
 
     color: #9C9C9C;
@@ -44,11 +44,9 @@ form.example button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none;
+  width: 64px;
+  height: 74px;
+  background: url(image.png);
   cursor: pointer;
 }
 
@@ -65,7 +63,7 @@ form.example::after {
 </head>
 <body>
 
-<h2>Search Button</h2>
+<h2>DNHS Black Market Search</h2>
 
 <form class="example" action="/action_page.php">
   <input type="text" placeholder="Used TI Inspire Calculator..." name="search">
