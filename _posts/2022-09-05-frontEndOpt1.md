@@ -1,7 +1,7 @@
 ---
-title: Grade Calculator
+title: Javascript Hacks 
 layout: default
-description: Grade Calculator from APCSPA Repo
+description: Javascript/HTML and UI Screens with data
 permalink: /frontend/opt1
 categories: [markdown]
 ---
@@ -12,7 +12,7 @@ categories: [markdown]
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-        <span class="fs-4">Grade Calculator</span>
+        <span class="fs-4">Javascript Hacks</span>
     </header>
     <form>
         <!-- Totals -->
