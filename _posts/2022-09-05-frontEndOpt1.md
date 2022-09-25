@@ -10,7 +10,6 @@ categories: [markdown]
 {% include nav_frontend.html %}
 
 
-<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,8 +27,8 @@ form.example input[type=text] {
   padding: 10px;
   border: 1px solid grey;
   float: left;
-  width: 1208px;
-    height: 74px;
+  width: 80%;
+  height: 74px;
 
     font-family: 'Poppins';
     font-style: italic;
@@ -65,7 +64,7 @@ form.example::after {
 
 <h2>DNHS Black Market Search</h2>
 
-<form class="example" action="/action_page.php">
+<form class="example" action="google.com">
   <input type="text" placeholder="Used TI Inspire Calculator..." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
