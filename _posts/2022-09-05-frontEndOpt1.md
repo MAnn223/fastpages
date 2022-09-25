@@ -64,7 +64,7 @@ form.example::after {
 
 <h2>DNHS Black Market Search</h2>
 
-<form class="example" action="google.com?search=">
+<form class="example" action="https://google.com?search=">
   <input type="text" placeholder="Used TI Inspire Calculator..." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
