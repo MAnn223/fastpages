@@ -26,11 +26,18 @@ body {
 
 form.example input[type=text] {
   padding: 10px;
-  font-size: 17px;
   border: 1px solid grey;
   float: left;
-  width: 80%;
-  background: #f1f1f1;
+  width: 1208px;
+    height: 74px;
+
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 68px;
+
+    color: #9C9C9C;
 }
 
 form.example button {
@@ -60,9 +67,8 @@ form.example::after {
 
 <h2>Search Button</h2>
 
-<p>Full width:</p>
 <form class="example" action="/action_page.php">
-  <input type="text" placeholder="Search.." name="search">
+  <input type="text" placeholder="Used TI Inspire Calculator..." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
 
