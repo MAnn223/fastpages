@@ -36,6 +36,8 @@ form.example input[type=text] {
     font-size: 20px;
     line-height: 68px;
 
+    background: #FFF9F9;
+    border-radius: 100px;
     color: #9C9C9C;
 }
 
