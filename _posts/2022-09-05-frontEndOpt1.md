@@ -47,6 +47,7 @@ form.searchBar button {
   padding: 10px;
   width: 64px;
   height: 74px;
+  border: 1px solid grey;
   background: url(image.png);
   background: #FFF9F9;
   border-radius: 100px;
@@ -72,9 +73,13 @@ h2 {
     font-size: 20px;
     line-height: 68px;
 }
+
+body {
+  background-color: black;
+}
 </style>
 </head>
-<body style="background-color:black;>
+<body>
 
 <h2>DNHS Black Market Search</h2>
 
