@@ -18,6 +18,7 @@ title: Week 5 Program Design Hacks
 Modeling or UML. Behavior, Interaction, Data diagrams
 
 - [Figma Basic Prototype for DN Market](https://www.figma.com/file/CS0iwE7Gt6u95D7o1kync0/women-in-stem?node-id=0%3A1)
+- [DN Market Place Site Workflow Diagram](https://www.figma.com/file/Sksatvlq6lOdbhOv2lW9XG/wis-diagram?node-id=0%3A1)
 
 - Basic Outline
     - Home Screen
