@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      14 min read
     
 </span></p>
 
@@ -136,9 +136,9 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#IJavaScript-and-Table-formatting-using-toHTML-method">IJavaScript and Table formatting using toHTML method </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#Timer">Timer </a>
+<li class="toc-entry toc-h1"><a href="#Timer">Timer </a></li>
+<li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
 <li class="toc-entry toc-h2"><a href="#About-Us-DN-Market-Place-Prototype">About Us DN Market Place Prototype </a></li>
 <li class="toc-entry toc-h2"><a href="#DN-Marketplace-Data-Prototype">DN Marketplace Data Prototype </a></li>
 </ul>
@@ -808,9 +808,9 @@ object ; { name: 'Mr M', ghID: 'jm1021', classOf: 1977, role: 'Teacher' }
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hacks">
+<h1 id="Hacks">
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
-</h2>
+</h1>
 <blockquote>
 <p>Objective of JavaScript is to produce frontend code.  Working in Jupyter Notebooks could help in the process of visualizing design with short and interactive feedback.  However, my hope is that you move to Fastpages and play with Frontend code in that environment and do the REAL thing.  Here is my suggestion.</p>
 <p>Design UI screens that are prototypes for your project.  Design at least one screen with data from a structure (like Person data above),  that is used to dynamically create HTML. As an alternative to HTML text method above, look at Jokes post and usage createElement...
@@ -1040,36 +1040,36 @@ for (const row of data) {
     <div class="input_area">
 <div class=" highlight hl-javascript"><pre><span></span><span class="c1">//const resultCont = document.getElementById("result");</span>
 <span class="kd">function</span> <span class="nx">item</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="nx">seller</span><span class="p">,</span><span class="nx">price</span><span class="p">,</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">seller</span> <span class="o">=</span> <span class="nx">seller</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">price</span> <span class="o">=</span> <span class="nx">price</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">condition</span> <span class="o">=</span> <span class="nx">condition</span><span class="p">;</span>
-  <span class="p">}</span>
-  
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">seller</span> <span class="o">=</span> <span class="nx">seller</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">price</span> <span class="o">=</span> <span class="nx">price</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">condition</span> <span class="o">=</span> <span class="nx">condition</span><span class="p">;</span>
+<span class="p">}</span>
 
-  <span class="c1">// define a JSON conversion "method" associated with Person</span>
-  <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">price</span><span class="p">,</span> <span class="nx">seller</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">seller</span><span class="p">};</span>
-    <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>  <span class="c1">// json/string is useful when passing data on internet</span>
-    <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
-  <span class="p">}</span>
 
-  <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="k">new</span> <span class="nx">item</span><span class="p">(</span><span class="s2">"AP Physics C Barons Prep Book"</span><span class="p">,</span> <span class="s2">"Meena A"</span><span class="p">,</span> <span class="s2">"20"</span><span class="p">,</span> <span class="s2">"Slightly used"</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">item</span><span class="p">(</span><span class="s2">"Calculus Tutoring"</span><span class="p">,</span> <span class="s2">"Bob the Builder"</span><span class="p">,</span> <span class="s2">"100"</span><span class="p">,</span> <span class="s2">"N/A"</span><span class="p">),</span>
-  <span class="p">];</span>
+<span class="c1">// define a JSON conversion "method" associated with Person</span>
+<span class="nx">Item</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">price</span><span class="p">,</span> <span class="nx">seller</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">seller</span><span class="p">};</span>
+  <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>  <span class="c1">// json/string is useful when passing data on internet</span>
+  <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
+<span class="p">}</span>
 
-  <span class="kd">function</span> <span class="nx">format</span><span class="p">(</span><span class="nx">item</span><span class="p">){</span> <span class="c1">// 1 teacher, many student</span>
-    <span class="c1">// start Classroom with Teacher</span>
-    <span class="c1">//teacher.setRole("Teacher");</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">item</span> <span class="o">=</span> <span class="nx">item</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">classroom</span> <span class="o">=</span> <span class="p">[</span><span class="nx">teacher</span><span class="p">];</span>
-    <span class="c1">// build json/string format of Classroom</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="p">[];</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">json</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">()));</span>
-  <span class="p">}</span>
-  
-  
+<span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="k">new</span> <span class="nx">item</span><span class="p">(</span><span class="s2">"AP Physics C Barons Prep Book"</span><span class="p">,</span> <span class="s2">"Meena A"</span><span class="p">,</span> <span class="s2">"20"</span><span class="p">,</span> <span class="s2">"Slightly used"</span><span class="p">),</span>
+  <span class="k">new</span> <span class="nx">item</span><span class="p">(</span><span class="s2">"Calculus Tutoring"</span><span class="p">,</span> <span class="s2">"Bob the Builder"</span><span class="p">,</span> <span class="s2">"100"</span><span class="p">,</span> <span class="s2">"N/A"</span><span class="p">),</span>
+<span class="p">];</span>
+
+<span class="kd">function</span> <span class="nx">format</span><span class="p">(</span><span class="nx">item</span><span class="p">){</span> <span class="c1">// 1 teacher, many student</span>
+  <span class="c1">// start Classroom with Teacher</span>
+  <span class="c1">//teacher.setRole("Teacher");</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">item</span> <span class="o">=</span> <span class="nx">item</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">classroom</span> <span class="o">=</span> <span class="p">[</span><span class="nx">teacher</span><span class="p">];</span>
+  <span class="c1">// build json/string format of Classroom</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">json</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">()));</span>
+<span class="p">}</span>
+
+
 <span class="c1">// //build data table</span>
 <span class="c1">// for (const row of data) {</span>
 <span class="c1">//     // tr for each row</span>
@@ -1099,115 +1099,87 @@ for (const row of data) {
 
 
 
-<span class="c1">// define a function to hold data for a Person</span>
+
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"DN Market Place Item Info Prototype"</span><span class="p">);</span>
 
 
-<span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="nx">seller</span><span class="p">,</span><span class="nx">price</span><span class="p">,</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">seller</span> <span class="o">=</span> <span class="nx">seller</span><span class="p">;</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">price</span> <span class="o">=</span> <span class="nx">price</span><span class="p">;</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">condition</span> <span class="o">=</span> <span class="nx">condition</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">Item</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="nx">seller</span><span class="p">,</span><span class="nx">price</span><span class="p">,</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">seller</span> <span class="o">=</span> <span class="nx">seller</span><span class="p">;</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">price</span> <span class="o">=</span> <span class="nx">price</span><span class="p">;</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">condition</span> <span class="o">=</span> <span class="nx">condition</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// define a setter for role in Person data</span>
-<span class="c1">// Person.prototype.setRole = function(role) {</span>
-<span class="c1">//   this.role = role;</span>
-<span class="c1">// }</span>
 
-<span class="c1">// define a JSON conversion "method" associated with Person</span>
-<span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">price</span><span class="p">,</span> <span class="nx">seller</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">seller</span><span class="p">};</span>
-  <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>  <span class="c1">// json/string is useful when passing data on internet</span>
-  <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
+<span class="nx">Item</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">price</span><span class="p">,</span> <span class="nx">seller</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">seller</span><span class="p">};</span>
+<span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>  <span class="c1">// json/string is useful when passing data on internet</span>
+<span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// make a new Person and assign to variable teacher</span>
-<span class="kd">var</span> <span class="nx">teacher</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Scientific Calculator"</span><span class="p">,</span> <span class="s2">"Kebabob"</span><span class="p">,</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"Brand new"</span><span class="p">);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
-<span class="c1">// logItType(teacher);  // before role</span>
-<span class="c1">// logItType(teacher.toJSON());  // ok to do this even though role is not yet defined</span>
 
-<span class="c1">// // output of Object and JSON/string associated with Teacher</span>
-<span class="c1">// //teacher.setRole("Teacher");   // set the role</span>
-<span class="c1">// logItType(teacher); </span>
-<span class="c1">// logItType(teacher.toJSON());  </span>
-<span class="c1">// define a student Array of Person(s)</span>
-<span class="kd">var</span> <span class="nx">students</span> <span class="o">=</span> <span class="p">[</span> 
-  <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"AP Physics C Barons Prep Book"</span><span class="p">,</span> <span class="s2">"Meena A"</span><span class="p">,</span> <span class="s2">"20"</span><span class="p">,</span> <span class="s2">"Slightly used"</span><span class="p">),</span>
-  <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Calculus Tutoring"</span><span class="p">,</span> <span class="s2">"Bob the Builder"</span><span class="p">,</span> <span class="s2">"100"</span><span class="p">,</span> <span class="s2">"N/A"</span><span class="p">),</span>
+<span class="kd">var</span> <span class="nx">firstItem</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Item</span><span class="p">(</span><span class="s2">"Scientific Calculator"</span><span class="p">,</span> <span class="s2">"Kebabob"</span><span class="p">,</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"Brand new"</span><span class="p">);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
+
+<span class="kd">var</span> <span class="nx">theItems</span> <span class="o">=</span> <span class="p">[</span> 
+<span class="k">new</span> <span class="nx">Item</span><span class="p">(</span><span class="s2">"AP Physics C Barons Prep Book"</span><span class="p">,</span> <span class="s2">"Meena A"</span><span class="p">,</span> <span class="s2">"20"</span><span class="p">,</span> <span class="s2">"Slightly used"</span><span class="p">),</span>
+<span class="k">new</span> <span class="nx">Item</span><span class="p">(</span><span class="s2">"Calculus Tutoring"</span><span class="p">,</span> <span class="s2">"Bob the Builder"</span><span class="p">,</span> <span class="s2">"100"</span><span class="p">,</span> <span class="s2">"N/A"</span><span class="p">),</span>
 <span class="p">];</span>
 
-<span class="c1">// define a classroom and build Classroom objects and json</span>
-<span class="kd">function</span> <span class="nx">Classroom</span><span class="p">(</span><span class="nx">teacher</span><span class="p">,</span> <span class="nx">students</span><span class="p">){</span> <span class="c1">// 1 teacher, many student</span>
-  <span class="c1">// start Classroom with Teacher</span>
-  <span class="c1">//teacher.setRole("Teacher");</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">teacher</span> <span class="o">=</span> <span class="nx">teacher</span><span class="p">;</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">classroom</span> <span class="o">=</span> <span class="p">[</span><span class="nx">teacher</span><span class="p">];</span>
-  <span class="c1">// add each Student to Classroom</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">students</span> <span class="o">=</span> <span class="nx">students</span><span class="p">;</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">students</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">student</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">classroom</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">student</span><span class="p">);</span> <span class="p">});</span>
-  <span class="c1">// build json/string format of Classroom</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="p">[];</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">classroom</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">person</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">json</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">()));</span>
+<span class="kd">function</span> <span class="nx">Marketplace</span><span class="p">(</span><span class="nx">firstItem</span><span class="p">,</span> <span class="nx">theItems</span><span class="p">){</span> 
+<span class="k">this</span><span class="p">.</span><span class="nx">firstItem</span> <span class="o">=</span> <span class="nx">firstItem</span><span class="p">;</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">marketplace</span> <span class="o">=</span> <span class="p">[</span><span class="nx">firstItem</span><span class="p">];</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">theItems</span> <span class="o">=</span> <span class="nx">theItems</span><span class="p">;</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">theItems</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">theItem</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="k">this</span><span class="p">.</span><span class="nx">marketplace</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">theItem</span><span class="p">);</span> <span class="p">});</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">marketplace</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">json</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">()));</span>
 <span class="p">}</span>
 
-<span class="c1">// make a CompSci classroom from formerly defined teacher and students</span>
-<span class="nx">compsci</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Classroom</span><span class="p">(</span><span class="nx">teacher</span><span class="p">,</span> <span class="nx">students</span><span class="p">);</span>
+<span class="c1">// make a del norte marketplace </span>
+<span class="nx">dnMarket</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Marketplace</span><span class="p">(</span><span class="nx">firstItem</span><span class="p">,</span> <span class="nx">theItems</span><span class="p">);</span>
+<span class="nx">Marketplace</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_toHtml</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// HTML Style is build using inline structure</span>
+  <span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"display:inline-block;"</span> <span class="o">+</span>
+    <span class="s2">"border: 2px solid grey;"</span> <span class="o">+</span>
+    <span class="s2">"box-shadow: 0.8em 0.4em 0.4em grey;"</span>
+  <span class="p">);</span>
 
-<span class="c1">// //  output of Objects and JSON in CompSci classroom</span>
-<span class="c1">// logItType(compsci.classroom);  // constructed classroom object</span>
-<span class="c1">// logItType(compsci.classroom[0].name);  // abstract 1st objects name</span>
-<span class="c1">// logItType(compsci.json[0]);  // show json conversion of 1st object to string</span>
-<span class="c1">// logItType(JSON.parse(compsci.json[0]));  // show JSON.parse inverse of JSON.stringify</span>
+  <span class="c1">// HTML Body of Table is build as a series of concatenations (+=)</span>
+  <span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+  <span class="c1">// Heading for Array Columns</span>
+  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
+  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Name"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
 
-<span class="c1">// define an HTML conversion "method" associated with Classroom</span>
-<span class="nx">Classroom</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_toHtml</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// HTML Style is build using inline structure</span>
-    <span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
-      <span class="s2">"display:inline-block;"</span> <span class="o">+</span>
-      <span class="s2">"border: 2px solid grey;"</span> <span class="o">+</span>
-      <span class="s2">"box-shadow: 0.8em 0.4em 0.4em grey;"</span>
-    <span class="p">);</span>
-  
-    <span class="c1">// HTML Body of Table is build as a series of concatenations (+=)</span>
-    <span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
-    <span class="c1">// Heading for Array Columns</span>
+  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Seller"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
+  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Price"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
+  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Condition"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
+  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;/tr&gt;"</span><span class="p">;</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">in</span> <span class="nx">dnMarket</span><span class="p">.</span><span class="nx">marketplace</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// tr for each row, a new line</span>
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Name"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
-    <span class="c1">// body += "&lt;th&gt;&lt;mark&gt;" + "GitHub ID" + "&lt;/mark&gt;&lt;/th&gt;";</span>
-    <span class="c1">// body += "&lt;th&gt;&lt;mark&gt;" + "Class Of" + "&lt;/mark&gt;&lt;/th&gt;";</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Seller"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Price"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Condition"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;/tr&gt;"</span><span class="p">;</span>
-    <span class="c1">// Data of Array, iterate through each row of compsci.classroom </span>
-    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">in</span> <span class="nx">compsci</span><span class="p">.</span><span class="nx">classroom</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// tr for each row, a new line</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
-      <span class="c1">// td for each column of data</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">compsci</span><span class="p">.</span><span class="nx">classroom</span><span class="p">[</span><span class="nx">row</span><span class="p">].</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
-      <span class="c1">// body += "&lt;td&gt;" + compsci.classroom[row].ghID + "&lt;/td&gt;";</span>
-      <span class="c1">// body += "&lt;td&gt;" + compsci.classroom[row].classOf + "&lt;/td&gt;";</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">compsci</span><span class="p">.</span><span class="nx">classroom</span><span class="p">[</span><span class="nx">row</span><span class="p">].</span><span class="nx">seller</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">compsci</span><span class="p">.</span><span class="nx">classroom</span><span class="p">[</span><span class="nx">row</span><span class="p">].</span><span class="nx">price</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">compsci</span><span class="p">.</span><span class="nx">classroom</span><span class="p">[</span><span class="nx">row</span><span class="p">].</span><span class="nx">condition</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
-      <span class="c1">// tr to end line</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
-    <span class="p">}</span>
-  
-     <span class="c1">// Build and HTML fragment of div, table, table body</span>
-    <span class="k">return</span> <span class="p">(</span>
-      <span class="s2">"&lt;div style='"</span> <span class="o">+</span> <span class="nx">style</span> <span class="o">+</span> <span class="s2">"'&gt;"</span> <span class="o">+</span>
-        <span class="s2">"&lt;table&gt;"</span> <span class="o">+</span>
-          <span class="nx">body</span> <span class="o">+</span>
-        <span class="s2">"&lt;/table&gt;"</span> <span class="o">+</span>
-      <span class="s2">"&lt;/div&gt;"</span>
-    <span class="p">);</span>
-  
-  <span class="p">};</span>
-  
-  <span class="c1">// IJavaScript HTML processor receive parameter of defined HTML fragment</span>
-  <span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">compsci</span><span class="p">.</span><span class="nx">_toHtml</span><span class="p">());</span>
+    <span class="c1">// td for each column of data</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">dnMarket</span><span class="p">.</span><span class="nx">marketplace</span><span class="p">[</span><span class="nx">row</span><span class="p">].</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">dnMarket</span><span class="p">.</span><span class="nx">marketplace</span><span class="p">[</span><span class="nx">row</span><span class="p">].</span><span class="nx">seller</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">dnMarket</span><span class="p">.</span><span class="nx">marketplace</span><span class="p">[</span><span class="nx">row</span><span class="p">].</span><span class="nx">price</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">dnMarket</span><span class="p">.</span><span class="nx">marketplace</span><span class="p">[</span><span class="nx">row</span><span class="p">].</span><span class="nx">condition</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
+    <span class="c1">// tr to end line</span>
+    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
+  <span class="p">}</span>
+
+   <span class="c1">// Build and HTML fragment of div, table, table body</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="s2">"&lt;div style='"</span> <span class="o">+</span> <span class="nx">style</span> <span class="o">+</span> <span class="s2">"'&gt;"</span> <span class="o">+</span>
+      <span class="s2">"&lt;table&gt;"</span> <span class="o">+</span>
+        <span class="nx">body</span> <span class="o">+</span>
+      <span class="s2">"&lt;/table&gt;"</span> <span class="o">+</span>
+    <span class="s2">"&lt;/div&gt;"</span>
+  <span class="p">);</span>
+
+<span class="p">};</span>
+
+<span class="c1">// IJavaScript HTML processor receive parameter of defined HTML fragment</span>
+<span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">dnMarket</span><span class="p">.</span><span class="nx">_toHtml</span><span class="p">());</span>
 </pre></div>
 
     </div>
