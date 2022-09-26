@@ -23,7 +23,7 @@ body {
   box-sizing: border-box;
 }
 
-form.example input[type=text] {
+form.searchBar input[type=text] {
   padding: 10px;
   border: 1px solid grey;
   float: left;
@@ -32,7 +32,7 @@ form.example input[type=text] {
 
     font-family: 'Poppins';
     font-style: italic;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
     line-height: 68px;
 
@@ -41,7 +41,7 @@ form.example input[type=text] {
     color: #9C9C9C;
 }
 
-form.example button {
+form.searchBar button {
   float: left;
   width: 20%;
   padding: 10px;
@@ -53,11 +53,11 @@ form.example button {
   cursor: pointer;
 }
 
-form.example button:hover {
+form.searchBar button:hover {
   background: #0b7dda;
 }
 
-form.example::after {
+form.searchBar::after {
   content: "";
   clear: both;
   display: table;
@@ -66,14 +66,19 @@ form.example::after {
 h2 {
     background-color: black;
     color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 68px;
 }
 </style>
 </head>
-<body>
+<body style="background-color:black;>
 
 <h2>DNHS Black Market Search</h2>
 
-<form class="example" action="https://www.google.com/search" target="_blank">
+<form class="searchBar" action="https://www.google.com/search" target="_blank">
   <input type="text" placeholder="Used TI Inspire Calculator..." name="q">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
