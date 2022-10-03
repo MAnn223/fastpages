@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <!-- HTML table fragment for page -->
 <html>
 <body>
-<!-- <table>
+<table>
   <thead>
   <tr>
     <th>Category</th>
@@ -84,16 +84,15 @@ window.onload = wrap_img;
   </tbody>
 </table>
 
-<!-- <table>
+<table>
   <thead>
   <tr>
     <th>Category</th>
   </tr>
   </thead>
   <tbody id="result">
-    <!-- generated rows -->
-  <!-- </tbody>
-</table> --> 
+ </tbody>
+</table>  
 
 <p id="data"></p>
 
@@ -113,17 +112,17 @@ window.onload = wrap_img;
           for (let i in data.categories) {
             document.getElementById("data").innerHTML = "Category " + ", " + data.categories[i].category;
             // // tr for each row
-            //const tr = document.createElement("tr");
+            const tr = document.createElement("tr");
             // // td for each column
-            //const category = document.createElement("td");
+           const category = document.createElement("td");
             
             // // data is specific to the API
-            //category.innerHTML = data.categories[i].category;
+            category.innerHTML = data.categories[i].category;
             
             // tr.appendChild(category);
 
             // // add HTML to container
-            // resultContainer.appendChild(tr);
+            resultContainer.appendChild(tr);
           }
 
 
