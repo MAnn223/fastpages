@@ -107,15 +107,15 @@ window.onload = wrap_img;
          
 
           
-          for (let i in obj.ategories) {
-            document.getElementById("data").innerHTML = "Category " + ", " + obj.categories[i].category;
+          for (let i in data.ategories) {
+            document.getElementById("data").innerHTML = "Category " + ", " + data.categories[i].category;
             // // tr for each row
             const tr = document.createElement("tr");
             // // td for each column
             const category = document.createElement("td");
             
             // // data is specific to the API
-            category.innerHTML = obj.categories[i].category;
+            category.innerHTML = data.categories[i].category;
             
             // tr.appendChild(category);
 
