@@ -71,7 +71,9 @@ window.onload = wrap_img;
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <!-- HTML table fragment for page -->
-<table>
+<html>
+<body>
+<!-- <table>
   <thead>
   <tr>
     <th>Category</th>
@@ -82,7 +84,7 @@ window.onload = wrap_img;
   </tbody>
 </table>
 
-<table>
+<!-- <table>
   <thead>
   <tr>
     <th>Category</th>
@@ -90,15 +92,16 @@ window.onload = wrap_img;
   </thead>
   <tbody id="result">
     <!-- generated rows -->
-  </tbody>
-</table>
+  &lt;/tbody&gt;
+&lt;/table&gt; --&gt; --&gt;
 
 <p id="data"></p>
+
 
 <!-- Script is layed out in a sequence (no function) and will execute when page is loaded -->
 <script>
   // prepare HTML result container for new output
-  const resultContainer = document.getElementById("result");
+  //const resultContainer = document.getElementById("result");
 
   // prepare fetch options
   const url = "http://localhost:8080/api/store/categories";
@@ -188,7 +191,8 @@ window.onload = wrap_img;
   //   resultContainer.appendChild(tr);
   // });
 </script>
-
+</body>
+</html>
 
       </div>
     </main><footer class="site-footer h-card">
