@@ -23,10 +23,10 @@ description: DN Market Place Listings data fetch and display
     .then((json) => {
       json.map(function(listing) {
         let li = document.createElement('li');
-        let joke = document.createElement('h2');
+        let name = document.createElement('h2');
         
 
-        joke.innerHTML = `${listing.joke}`;
+        name.innerHTML = `${listing.name}`;
         
 
         li.appendChild(joke);
