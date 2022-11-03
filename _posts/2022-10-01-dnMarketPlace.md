@@ -1,10 +1,3 @@
----
-title: Fetch of DN Market Place Listings
-layout: default
-description: DN Market Place Listings data fetch and display
----
-
-
 <html>
 <body>
 <h1>DN Market Place</h1>
@@ -24,12 +17,21 @@ description: DN Market Place Listings data fetch and display
       json.map(function(listing) {
         let li = document.createElement('li');
         let name = document.createElement('h2');
+		let price = document.createElement('h2');
+		let seller = document.createElement('h2');
+		let image = document.createElement('h2');
         
 
         name.innerHTML = `${listing.name}`;
+		price.innerHTML = `${listing.price}`;
+		seller.innerHTML = `${listing.seller}`;
+		image.innerHTML = `${listing.image}`;
         
 
-        li.appendChild(joke);
+        li.appendChild(name);
+		li.appendChild(price);
+		li.appendChild(seller);
+		li.appendChild(image);
         list.appendChild(li);
 		ul.appendChild(list);
       });
