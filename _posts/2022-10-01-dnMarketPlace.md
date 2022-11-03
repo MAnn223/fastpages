@@ -1,3 +1,9 @@
+---
+title: Fetch of listings from DNMarketPlace API
+layout: default
+description: Fetch listing data from backend
+---
+
 <html>
 <body>
 <h1>DN Market Place</h1>
@@ -22,7 +28,7 @@
 		let image = document.createElement('h2');
         
 
-        name.innerHTML = `${listing.name}`;
+    name.innerHTML = `${listing.name}`;
 		price.innerHTML = `${listing.price}`;
 		seller.innerHTML = `${listing.seller}`;
 		image.innerHTML = `${listing.image}`;
