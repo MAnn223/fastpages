@@ -5,10 +5,22 @@ description: Fetch listing data from backend
 ---
 
 <html>
+<style>
+.myDiv {
+  border: 5px outset darkblue;
+  background-color: lightblue;    
+  text-align: left;
+}
+ul {
+	list-style-type: none;
+}
+</style>
 <body>
+<div class="myDiv">
 <h1>DN Market Place</h1>
 <ul id="listings">
 </ul>
+</div>
 
 <script>
   const ul = document.getElementById('listings');
@@ -28,7 +40,7 @@ description: Fetch listing data from backend
 		let image = document.createElement('h2');
         
 
-    name.innerHTML = `${listing.name}`;
+        name.innerHTML = `${listing.name}`;
 		price.innerHTML = `${listing.price}`;
 		seller.innerHTML = `${listing.seller}`;
 		image.innerHTML = `${listing.image}`;
