@@ -71,10 +71,22 @@ window.onload = wrap_img;
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <html>
+<style>
+.myDiv {
+  border: 5px outset darkblue;
+  background-color: lightblue;    
+  text-align: left;
+}
+ul {
+	list-style-type: none;
+}
+</style>
 <body>
+<div class="myDiv">
 <h1>DN Market Place</h1>
 <ul id="listings">
 </ul>
+</div>
 
 <script>
   const ul = document.getElementById('listings');
@@ -94,7 +106,7 @@ window.onload = wrap_img;
 		let image = document.createElement('h2');
         
 
-    name.innerHTML = `${listing.name}`;
+        name.innerHTML = `${listing.name}`;
 		price.innerHTML = `${listing.price}`;
 		seller.innerHTML = `${listing.seller}`;
 		image.innerHTML = `${listing.image}`;
