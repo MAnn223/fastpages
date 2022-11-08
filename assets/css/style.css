@@ -1,4 +1,3 @@
-@import url(minima/testBackground.css);
 .highlight .c { color: #998; font-style: italic; }
 
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
@@ -425,6 +424,42 @@ pre code { font-size: 15px !important; }
 .youtube-iframe-wrapper { position: relative; padding-bottom: 56.10%; height: 0; overflow: hidden; }
 
 .youtube-iframe-wrapper iframe, .youtube-iframe-wrapper object, .youtube-iframe-wrapper embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #aeecff !important; }
+
+a { color: #4bbaff !important; }
+
+a:hover { color: rgba(255, 255, 255, 0.87) !important; }
+
+.site-title, .site-title:visited, .site-nav, .page-link { color: rgba(255, 255, 255, 0.87) !important; }
+
+.site-nav { background-color: #aeecff; border-color: #b9efff; }
+
+* { scrollbar-color: #aeecff #b9efff; }
+
+pre, code { border-color: #b9efff; background-color: #b2edff; }
+
+.page-description { color: rgba(255, 255, 255, 0.69); }
+
+.post-meta { color: rgba(255, 255, 255, 0.38); }
+
+.post-content p, .post-content li { color: rgba(255, 255, 255, 0.69); }
+
+.btn { background-color: #b2edff !important; color: rgba(255, 255, 255, 0.87) !important; border-color: #b9efff !important; }
+
+.btn:hover { background-color: #aeecff !important; }
+
+table th { background-color: #b2edff; border-color: #b9efff; color: rgba(255, 255, 255, 0.87); }
+
+table td { background-color: #aeecff; border-color: #b9efff; color: rgba(255, 255, 255, 0.69); }
+
+.flash { color: #aeecff !important; filter: brightness(80%); }
+
+canvas { filter: invert(100%); }
+
+.post-list > li > div { box-shadow: none !important; background-color: #b2edff; border: none !important; }
+
+li .post-meta-description { color: rgba(255, 255, 255, 0.69) !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
