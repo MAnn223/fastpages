@@ -1,0 +1,33 @@
+---
+toc: true
+layout: post
+description: Methods and Control Structures
+categories: [markdown]
+title: FRQ 1 PBL
+---
+# FRQ 1 Hacks
+- [Issue on Github](https://github.com/MAnn223/fastpages/issues/8)
+
+
+
+## Implement FRQ1 in Spring
+>> Completes APIs and methods not completed, use Spring Portfolio mvc/calendar for starter code, enhance APCalendar.java 
+
+    - [APCalendar.java](https://github.com/MAnn223/meenaSpring/blob/master/src/main/java/com/nighthawk/spring_portfolio/mvc/calendar/APCalendar.java)
+    - Found a formula to calculate the day of the year and the day of the week
+
+## Enhance APIs and @RESTController to work with the all POJOs and APCalendar.
+
+    - [Year.java](https://github.com/MAnn223/meenaSpring/blob/master/src/main/java/com/nighthawk/spring_portfolio/mvc/calendar/Year.java)
+
+    -[CalendarApiController.java](https://github.com/MAnn223/meenaSpring/blob/master/src/main/java/com/nighthawk/spring_portfolio/mvc/calendar/CalendarApiController.java)
+
+## Test APIs with Browser, Curl, or Postman. Illustrate or show tangibles.
+- Browser
+![]({{ site.baseurl }}/images/browserDayOfWeek.PNG)
+    
+- Test and use VSCode Debugger in development. Illustrate or show tangibles.
+- Demo and Debugging
+- REST Serializing and Deserializing Year objects is necessary. There is completed example.
+
+- Read ObjectMapper and Write ObjectMapper. ObjectMapper provides functionality for reading and writing JSON, either to and from basic POJOs (Plain Old Java Objects), or to and from a general-purpose JSON Tree Model (JsonNode).> FYI, in FRQ2 you will see REST Serialization is mostly automatic with JPA
