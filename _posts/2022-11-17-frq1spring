@@ -25,6 +25,16 @@ title: FRQ 1 PBL
 ## Test APIs with Browser, Curl, or Postman. Illustrate or show tangibles.
 - Browser
 ![]({{ site.baseurl }}/images/browserDayOfWeek.PNG)
+![]({{ site.baseurl }}/images/browserDayOfYear.PNG)
+![]({{ site.baseurl }}/images/browserFirstDayOfYear.PNG)
+![]({{ site.baseurl }}/images/browserIsLeapYear.PNG)
+![]({{ site.baseurl }}/images/browserNumLeapYears.PNG)
+
+- Postman
+![]({{ site.baseurl }}/images/postManExample.PNG)
+
+- Curl
+![]({{ site.baseurl }}/images/curlExample.PNG)
     
 - Test and use VSCode Debugger in development. Illustrate or show tangibles.
 - Demo and Debugging
