@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      9 min read
     
 </span></p>
 
@@ -151,9 +151,17 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Unit-4:-Iteration">Unit 4: Iteration </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#While-Loops">While Loops </a></li>
+<li class="toc-entry toc-h2"><a href="#Do-while-Loop">Do-while Loop </a></li>
+<li class="toc-entry toc-h2"><a href="#For-loop">For loop </a></li>
+<li class="toc-entry toc-h2"><a href="#Enhanced-for-loop-or-for-each-loop">Enhanced for loop or for-each loop </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#Unit-5-Writing-Classes">Unit 5 Writing Classes </a></li>
+<li class="toc-entry toc-h1"><a href="#Unit-5-Writing-Classes">Unit 5 Writing Classes </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Constructor">Constructor </a></li>
+<li class="toc-entry toc-h2"><a href="#Accessor-Methods">Accessor Methods </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Unit-6-Arrays">Unit 6 Arrays </a></li>
 </ul><!--
 #################################################
@@ -884,6 +892,222 @@ dog1 equals dog1 is true
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Do-while-Loop">
+<a class="anchor" href="#Do-while-Loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Do-while Loop<a class="anchor-link" href="#Do-while-Loop"> </a>
+</h2>
+<ul>
+<li>similar to while loop except that the condition is checked <strong>after</strong> the statements are executed so do-while loop will execute at least once</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//do-while loop example</span>
+<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+		<span class="k">do</span> <span class="p">{</span>
+			<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+			<span class="n">i</span><span class="o">++</span><span class="p">;</span>
+		<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+6
+7
+8
+9
+10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="For-loop">
+<a class="anchor" href="#For-loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>For loop<a class="anchor-link" href="#For-loop"> </a>
+</h2>
+<ul>
+<li>loop through a block of code for a certain amount of times</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+  <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+3
+4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Nested Loops<ul>
+<li>placing a loop inside another loop</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Outer loop</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Outer: "</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span> <span class="c1">// Executes 2 times</span>
+    
+    <span class="c1">// Inner loop</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" Inner: "</span> <span class="o">+</span> <span class="n">j</span><span class="p">);</span> <span class="c1">// Executes 6 times (2 * 3)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Outer: 1
+ Inner: 1
+ Inner: 2
+ Inner: 3
+Outer: 2
+ Inner: 1
+ Inner: 2
+ Inner: 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Enhanced-for-loop-or-for-each-loop">
+<a class="anchor" href="#Enhanced-for-loop-or-for-each-loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enhanced for loop or for-each loop<a class="anchor-link" href="#Enhanced-for-loop-or-for-each-loop"> </a>
+</h2>
+<ul>
+<li>used to traverse an array, code more readable/reduces chances of bugs </li>
+<li>but cannot traverse in reverse order, can't skip any element </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//declaring an array  </span>
+<span class="kt">int</span> <span class="n">arr</span><span class="o">[]=</span><span class="p">{</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">44</span><span class="p">};</span>  
+<span class="c1">//traversing the array with for-each loop  </span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">:</span><span class="n">arr</span><span class="p">){</span>  
+  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>  
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>12
+13
+14
+44
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Unit-5-Writing-Classes">
 <a class="anchor" href="#Unit-5-Writing-Classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 5 Writing Classes<a class="anchor-link" href="#Unit-5-Writing-Classes"> </a>
 </h1>
@@ -908,8 +1132,9 @@ dog1 equals dog1 is true
 </ul>
 </li>
 <li>
-<p>Objects are instances of a class</p>
+<p>naming classes w camelCase, simple and descriptive names</p>
 </li>
+<li>Objects are instances of a class</li>
 <li>Methods are what an object can do</li>
 <li>
 <code>public</code> means it can be accessed outside the class</li>
@@ -966,6 +1191,20 @@ dog1 equals dog1 is true
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>moo
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1011,6 +1250,160 @@ dog1 equals dog1 is true
 <span class="p">}</span>
 
 <span class="n">Song</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This old man, he played one
+He played knick knack on my thumb
+With a knick knack paddy whack, give a dog a bone.
+This old man came rolling home.
+This old man, he played two
+He played knick knack on my shoe
+With a knick knack paddy whack, give a dog a bone.
+This old man came rolling home.
+This old man, he played three
+He played knick knack on my knee
+With a knick knack paddy whack, give a dog a bone.
+This old man came rolling home.
+This old man, he played four
+He played knick knack on my door
+With a knick knack paddy whack, give a dog a bone.
+This old man came rolling home.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Constructor">
+<a class="anchor" href="#Constructor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Constructor<a class="anchor-link" href="#Constructor"> </a>
+</h2>
+<ul>
+<li>special method used to initialize objects</li>
+<li>called when an object of a class is created </li>
+<li>
+<p>can be used to set initial values for object attributes</p>
+</li>
+<li>
+<p>constructor doesn't return a value because it's not directly called by your code</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Create a Main class</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>  <span class="c1">// Create a class attribute</span>
+  
+    <span class="c1">// Create a class constructor for the Main class</span>
+    <span class="kd">public</span> <span class="nf">Main</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>  <span class="c1">// Set the initial value for the class attribute x</span>
+    <span class="p">}</span>
+  
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Main</span> <span class="n">myObj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Main</span><span class="p">();</span> <span class="c1">// Create an object of class Main (This will call the constructor)</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">myObj</span><span class="p">.</span><span class="na">x</span><span class="p">);</span> <span class="c1">// Print the value of x</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  
+  <span class="c1">// Outputs 5</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">modelYear</span><span class="p">;</span>
+    <span class="n">String</span> <span class="n">modelName</span><span class="p">;</span>
+  
+    <span class="kd">public</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">int</span> <span class="n">year</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">modelYear</span> <span class="o">=</span> <span class="n">year</span><span class="p">;</span>
+      <span class="n">modelName</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Main</span> <span class="n">myCar</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Main</span><span class="p">(</span><span class="mi">1969</span><span class="p">,</span> <span class="s">"Mustang"</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">myCar</span><span class="p">.</span><span class="na">modelYear</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">myCar</span><span class="p">.</span><span class="na">modelName</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  
+<span class="c1">// Outputs 1969 Mustang</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Accessor-Methods">
+<a class="anchor" href="#Accessor-Methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Accessor Methods<a class="anchor-link" href="#Accessor-Methods"> </a>
+</h2>
+<ul>
+<li>also called get methods or getters</li>
+<li>return the value of a private variable, provide access to an object's instance variables</li>
+<li>gives other classes access to that value stored in that variable without have direct access</li>
+<li>don't take any parameters</li>
+<li>have a return type that matches the type of the variable they're accessing </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CheckingAccount</span><span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">balance</span><span class="p">;</span>
+    
+    <span class="c1">//An accessor method</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getBalance</span><span class="p">(){</span>
+      <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">balance</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 </pre></div>
 
     </div>
