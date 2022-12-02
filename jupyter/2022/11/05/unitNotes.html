@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      12 min read
     
 </span></p>
 
@@ -1763,9 +1763,66 @@ Age: 24
 <h2 id="Static-methods,-class-methods">
 <a class="anchor" href="#Static-methods,-class-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Static methods, class methods<a class="anchor-link" href="#Static-methods,-class-methods"> </a>
 </h2>
+<ul>
+<li>methods that belong to the class instead of to an instance of the class</li>
+<li>accessed through the class name instead of with object </li>
+</ul>
+
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Student</span> 
+<span class="p">{</span> 
+<span class="kt">int</span> <span class="n">stdId</span><span class="p">;</span> 
+<span class="n">String</span> <span class="n">stdName</span><span class="p">;</span> 
+<span class="kd">static</span> <span class="n">String</span> <span class="n">schoolName</span> <span class="o">=</span> <span class="s">"Del Norte"</span><span class="p">;</span> 
+<span class="c1">//The following static method , valueChange to change the value of static variable static void valueChange() </span>
+<span class="p">{</span> 
+<span class="n">schoolName</span> <span class="o">=</span> <span class="s">"Del Norte"</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="c1">//The following constructor is used to initialize the variable </span>
+<span class="n">Student</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">){</span> 
+<span class="n">stdId</span> <span class="o">=</span> <span class="n">id</span><span class="p">;</span> 
+<span class="n">stdName</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span> 
+<span class="p">}</span> 
+<span class="c1">//The display method to display values </span>
+<span class="kt">void</span> <span class="nf">display</span><span class="p">()</span> 
+<span class="p">{</span> 
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">stdId</span><span class="o">+</span><span class="s">"  "</span><span class="o">+</span><span class="n">stdName</span><span class="o">+</span><span class="s">"  "</span><span class="o">+</span><span class="n">schoolName</span><span class="p">);</span> 
+<span class="p">}</span> 
+<span class="p">}</span> 
+<span class="c1">//The class Demo is used to create and display the values of the object </span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Demo</span> 
+<span class="p">{</span> 
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">)</span> 
+<span class="p">{</span> 
+<span class="n">Student</span><span class="p">.</span><span class="na">valueChange</span><span class="p">();</span><span class="c1">//calling valueChange method </span>
+<span class="c1">//creating objects </span>
+<span class="n">Student</span> <span class="n">StudentObj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="s">"Meena"</span><span class="p">);</span> 
+<span class="n">Student</span> <span class="n">StudentObj1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="s">"Shraddha"</span><span class="p">);</span> 
+<span class="n">Student</span> <span class="n">StudentObj2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="s">"Madhumita"</span><span class="p">);</span> 
+<span class="c1">//calling display method </span>
+<span class="n">StudentObj</span><span class="p">.</span><span class="na">display</span><span class="p">();</span> 
+<span class="n">StudentObj1</span><span class="p">.</span><span class="na">display</span><span class="p">();</span> 
+<span class="n">StudentObj2</span><span class="p">.</span><span class="na">display</span><span class="p">();</span> 
+<span class="p">}</span> 
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
