@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      12 min read
+      13 min read
     
 </span></p>
 
@@ -1829,15 +1829,55 @@ Age: 24
 <h2 id="this-keyword">
 <a class="anchor" href="#this-keyword" aria-hidden="true"><span class="octicon octicon-link"></span></a>this keyword<a class="anchor-link" href="#this-keyword"> </a>
 </h2>
+<ul>
+<li>refers to the current object in a method or constructor</li>
+<li>can be used to invoke current class constructor, pass an argument, etc</li>
+</ul>
+
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+  
+    <span class="c1">// Constructor with a parameter</span>
+    <span class="kd">public</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="na">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+    <span class="c1">// Call the constructor</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Main</span> <span class="n">myObj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Main</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Value of x = "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">x</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="main-method,-tester-methods">
 <a class="anchor" href="#main-method,-tester-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>main method, tester methods<a class="anchor-link" href="#main-method,-tester-methods"> </a>
 </h2>
+<ul>
+<li>main method runs code</li>
+<li>tester method which is a main method useful to test methods/code</li>
+</ul>
+
 </div>
 </div>
 </div>
