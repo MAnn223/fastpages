@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      11 min read
     
 </span></p>
 
@@ -164,7 +164,11 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#Mutator-Methods">Mutator Methods </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#--also-called-setters-">- also called setters  </a></li>
+<li class="toc-entry toc-h2"><a href="#Static-variables,-Class-variables">Static variables, Class variables </a></li>
+<li class="toc-entry toc-h2"><a href="#Public,-Private,-Protected---Access-Modifiers">Public, Private, Protected - Access Modifiers </a></li>
+<li class="toc-entry toc-h2"><a href="#Static-methods,-class-methods">Static methods, class methods </a></li>
+<li class="toc-entry toc-h2"><a href="#this-keyword">this keyword </a></li>
+<li class="toc-entry toc-h2"><a href="#main-method,-tester-methods">main method, tester methods </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Unit-6-Arrays">Unit 6 Arrays </a></li>
@@ -1455,8 +1459,327 @@ This old man came rolling home.
 <h1 id="Mutator-Methods">
 <a class="anchor" href="#Mutator-Methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mutator Methods<a class="anchor-link" href="#Mutator-Methods"> </a>
 </h1>
-<h2 id="--also-called-setters-">
-<a class="anchor" href="#--also-called-setters-" aria-hidden="true"><span class="octicon octicon-link"></span></a>- also called setters <a class="anchor-link" href="#--also-called-setters-"> </a>
+<ul>
+<li>also called setters </li>
+<li>Sets the value</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span> <span class="c1">// private = restricted access</span>
+  
+    <span class="c1">// Getter</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+    <span class="c1">// Setter</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="p">(</span><span class="n">String</span> <span class="n">newName</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">newName</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<p>The <code>get</code> method returns the value of the variable name.</p>
+</li>
+<li>
+<p>The <code>set</code> method takes a parameter (newName) and assigns it to the name variable. The this keyword is used to refer to the current object.</p>
+</li>
+<li>
+<p>Since the name variable is declared as private, we can't access it from outside this class:</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Static-variables,-Class-variables">
+<a class="anchor" href="#Static-variables,-Class-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Static variables, Class variables<a class="anchor-link" href="#Static-variables,-Class-variables"> </a>
+</h2>
+<ul>
+<li>class variables aka static variables are declared w the <code>static</code> keyword in a a class</li>
+<li>stored in static memory </li>
+<li>most declared public </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.io.*</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Employee</span> <span class="p">{</span>
+
+   <span class="c1">// salary  variable is a private static variable</span>
+   <span class="kd">private</span> <span class="kd">static</span> <span class="kt">double</span> <span class="n">salary</span><span class="p">;</span>
+
+   <span class="c1">// DEPARTMENT is a constant</span>
+   <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">DEPARTMENT</span> <span class="o">=</span> <span class="s">"Development "</span><span class="p">;</span>
+
+   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">salary</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">DEPARTMENT</span> <span class="o">+</span> <span class="s">"average salary: "</span> <span class="o">+</span> <span class="n">salary</span><span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Employee</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Development average salary: 1000.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Public,-Private,-Protected---Access-Modifiers">
+<a class="anchor" href="#Public,-Private,-Protected---Access-Modifiers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Public, Private, Protected - Access Modifiers<a class="anchor-link" href="#Public,-Private,-Protected---Access-Modifiers"> </a>
+</h2>
+<ul>
+<li>Private - accessed only within the class, can't be accessed from outside</li>
+<li>Protected - within the package and outside the package through child class only</li>
+<li>Public - access level everywhere </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//Public</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+  <span class="kd">public</span> <span class="n">String</span> <span class="n">fname</span> <span class="o">=</span> <span class="s">"John"</span><span class="p">;</span>
+  <span class="kd">public</span> <span class="n">String</span> <span class="n">lname</span> <span class="o">=</span> <span class="s">"Doe"</span><span class="p">;</span>
+  <span class="kd">public</span> <span class="n">String</span> <span class="n">email</span> <span class="o">=</span> <span class="s">"john@doe.com"</span><span class="p">;</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//Public</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">fname</span> <span class="o">=</span> <span class="s">"John"</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">lname</span> <span class="o">=</span> <span class="s">"Doe"</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">email</span> <span class="o">=</span> <span class="s">"john@doe.com"</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Main</span> <span class="n">myObj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Main</span><span class="p">();</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Name: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">fname</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">lname</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Email: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">email</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Age: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">age</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Name: John Doe
+Email: john@doe.com
+Age: 24
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//Private</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">fname</span> <span class="o">=</span> <span class="s">"John"</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">lname</span> <span class="o">=</span> <span class="s">"Doe"</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">email</span> <span class="o">=</span> <span class="s">"john@doe.com"</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Main</span> <span class="n">myObj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Main</span><span class="p">();</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Name: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">fname</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">lname</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Email: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">email</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Age: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">age</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Name: John Doe
+Email: john@doe.com
+Age: 24
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Protected</span>
+<span class="kd">class</span> <span class="nc">Person</span> <span class="p">{</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">fname</span> <span class="o">=</span> <span class="s">"John"</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">lname</span> <span class="o">=</span> <span class="s">"Doe"</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">email</span> <span class="o">=</span> <span class="s">"john@doe.com"</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="n">Person</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">graduationYear</span> <span class="o">=</span> <span class="mi">2018</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Student</span> <span class="n">myObj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">();</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Name: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">fname</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">lname</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Email: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">email</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Age: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">age</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Graduation Year: "</span> <span class="o">+</span> <span class="n">myObj</span><span class="p">.</span><span class="na">graduationYear</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Name: John Doe
+Email: john@doe.com
+Age: 24
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Static-methods,-class-methods">
+<a class="anchor" href="#Static-methods,-class-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Static methods, class methods<a class="anchor-link" href="#Static-methods,-class-methods"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="this-keyword">
+<a class="anchor" href="#this-keyword" aria-hidden="true"><span class="octicon octicon-link"></span></a>this keyword<a class="anchor-link" href="#this-keyword"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="main-method,-tester-methods">
+<a class="anchor" href="#main-method,-tester-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>main method, tester methods<a class="anchor-link" href="#main-method,-tester-methods"> </a>
 </h2>
 </div>
 </div>
