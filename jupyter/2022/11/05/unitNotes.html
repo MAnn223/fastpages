@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -213,10 +213,259 @@ window.onload = wrap_img;
 </ul>
 </li>
 </ul>
+<p><strong>Casting for Division</strong></p>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span> 
+<span class="c1">// use double to cast the answer to a decimal value since dividing the two integers will result in 0.25</span>
+<span class="kt">double</span> <span class="n">dividedAnswer</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">dividedAnswer</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.25
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Casting for Truncating and Rounding</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span> 
+<span class="c1">// 0.25 rounds to 0</span>
+<span class="kt">int</span> <span class="n">answerInt</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">;</span>
+<span class="kt">double</span> <span class="n">answerDub</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">answerInt</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">answerDub</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span> 
+<span class="c1">// 1.5 rounds to 1</span>
+<span class="kt">int</span> <span class="n">answerInt</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">;</span>
+<span class="kt">double</span> <span class="n">answerDub</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">answerInt</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">answerDub</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+0.25
+1
+1.5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Wrapper Classes</strong></p>
+<ul>
+<li>way to use primitive data types as objects (ex: use <code>Integer</code> instead of <code>int</code>)</li>
+<li>can now use methods to get info about the object</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">Integer</span> <span class="n">myInt</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="n">Double</span> <span class="n">myDouble</span> <span class="o">=</span> <span class="mf">50.01</span><span class="p">;</span>
+<span class="n">Character</span> <span class="n">myChar</span> <span class="o">=</span> <span class="sc">'M'</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">myInt</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">myDouble</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">myChar</span><span class="p">);</span>
+
+<span class="c1">// can now use methods </span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">myInt</span><span class="p">.</span><span class="na">intValue</span><span class="p">());</span>
+
+<span class="c1">// convert Integer to String and then print length</span>
+<span class="n">String</span> <span class="n">myString</span> <span class="o">=</span> <span class="n">myInt</span><span class="p">.</span><span class="na">toString</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">myString</span><span class="p">.</span><span class="na">length</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>50
+50.01
+M
+50
+2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Concatenation</strong></p>
+<ul>
+<li>combine strings </li>
+<li>mixed type concatenation - use <code>+</code>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// concatenation</span>
+<span class="n">String</span> <span class="n">word1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">word2</span> <span class="o">=</span> <span class="s">"World"</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">word1</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">word2</span><span class="p">);</span>
+
+<span class="c1">//mixed type concatenation </span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">word1</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">word2</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="mi">100</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello World
+Hello World 100
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Math Class</strong></p>
+<ul>
+<li>methods to perform math tasks on numbers </li>
+<li>
+<code>random()</code> returns a random number between 0 (inclusive) and 1</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">();</span>
+<span class="c1">// generates random number from 0 to 100</span>
+<span class="kt">int</span> <span class="n">randomNumber</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">101</span><span class="p">);</span>  <span class="c1">// 0 to 100</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">randomNumber</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>42
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -236,11 +485,73 @@ window.onload = wrap_img;
 <a class="anchor" href="#Compound-Boolean-Expressions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compound Boolean Expressions<a class="anchor-link" href="#Compound-Boolean-Expressions"> </a>
 </h2>
 <ul>
-<li>De Morgan's Law - helps simplify boolean expressions</li>
+<li>
+<strong>De Morgan's Law</strong> - helps simplify boolean expressions<ul>
+<li>De Morgan's Law says that "the complement of the product of all terms is equal to the sum of the complement of each term" and shows how the NOT (!) operator can be distributed. For example, <code>!(A &amp;&amp; B)</code> is the same as <code>!A || !B</code>. <code>!(C &gt; D)</code> is the same as <code>C &lt;= D</code>.</li>
+</ul>
+</li>
 <li><code>!(a&amp;&amp;b)= (!a || !b)</code></li>
 <li>Truth tables to visualize Boolean identities</li>
 </ul>
 <p><img src="/fastpages/images/copied_from_nb/../images/booleanLesson.PNG" alt=""></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//De Morgan's Law Example</span>
+
+<span class="kt">boolean</span> <span class="n">cold</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="kt">boolean</span> <span class="n">windy</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="c1">//this first if-else statement checks if both booleans are true and then reverse the result </span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">cold</span> <span class="o">&amp;&amp;</span> <span class="n">windy</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"It is not both cold and windy"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The condition is false"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">//this first if-else statement checks if cold is not true or if windy is not true </span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">cold</span> <span class="o">||</span> <span class="o">!</span><span class="n">windy</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"It is not both cold and windy"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The condition is false"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Based on De Morgan's Law, both if-else statements provide the same output</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>It is not both cold and windy
+It is not both cold and windy
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Comparing-Objects">
 <a class="anchor" href="#Comparing-Objects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comparing Objects<a class="anchor-link" href="#Comparing-Objects"> </a>
 </h2>
