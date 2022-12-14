@@ -24,7 +24,7 @@ Notes
 - Big risk is to stop learning 
 - Need to have critical thinking skills and willingness to learn
 - what you're interested now won't necessarily be your career 
-- can use CS skills in industry 
+- can use CS skills in any industry 
 
 Questions we asked
 - What would you say is the most important skill for people working in the tech industry?
