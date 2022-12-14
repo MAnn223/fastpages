@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Week 2 Work
 categories: [markdown]
-title: Innovation - Using Objects (Week 2)
+title: GiCS Guest Speaker Technical Panel
 ---
 # GiCS Guest Speaker Technical Panel
 
