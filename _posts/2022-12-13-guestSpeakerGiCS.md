@@ -5,7 +5,6 @@ description: Week 2 Work
 categories: [markdown]
 title: GiCS Guest Speaker Technical Panel
 ---
-# GiCS Guest Speaker Technical Panel
 
 Kathyleen Beveridge - Project Management
 - worked at companies like HP, Qualcomm, ThermoFisher (biotech)
