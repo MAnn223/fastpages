@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: Week 2 Work
+description: CS?Technical Business Panel
 categories: [markdown]
 title: GiCS Guest Speaker Technical Panel
 ---
