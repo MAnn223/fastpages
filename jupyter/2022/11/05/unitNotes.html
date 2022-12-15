@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -158,6 +158,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#Unit-5-Writing-Classes">Unit 5 Writing Classes </a>
 <ul>
+<li class="toc-entry toc-h2"><a href="#Unit-9---Inheritance">Unit 9 - Inheritance </a></li>
 <li class="toc-entry toc-h2"><a href="#Constructor">Constructor </a></li>
 <li class="toc-entry toc-h2"><a href="#Accessor-Methods">Accessor Methods </a></li>
 </ul>
@@ -174,6 +175,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Overloading-a-method,-same-name-different-parameters-and-Overriding-a-method,-same-signature-of-a-method">Overloading a method, same name different parameters and Overriding a method, same signature of a method </a></li>
 <li class="toc-entry toc-h2"><a href="#Abstraction">Abstraction </a></li>
 <li class="toc-entry toc-h2"><a href="#super-vs-this">super vs this </a></li>
+<li class="toc-entry toc-h2"><a href="#Unit-10---Recursion">Unit 10 - Recursion </a></li>
 <li class="toc-entry toc-h2"><a href="#Recursion">Recursion </a></li>
 <li class="toc-entry toc-h2"><a href="#toString-and-hashCode">toString and hashCode </a></li>
 <li class="toc-entry toc-h2"><a href="#Late-Binding">Late Binding </a></li>
@@ -181,7 +183,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Big-O-Notation">Big O Notation </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#Unit-6-Arrays">Unit 6 Arrays </a></li>
+<li class="toc-entry toc-h1"><a href="#Unit-6-Arrays">Unit 6 Arrays </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Unit-7-ArrayLists">Unit 7 ArrayLists </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Unit-8-2D-Arrays">Unit 8 2D Arrays </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Iteration">Iteration </a></li>
@@ -1316,6 +1322,15 @@ This old man came rolling home.
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Unit-9---Inheritance">
+<a class="anchor" href="#Unit-9---Inheritance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 9 - Inheritance<a class="anchor-link" href="#Unit-9---Inheritance"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Constructor">
 <a class="anchor" href="#Constructor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Constructor<a class="anchor-link" href="#Constructor"> </a>
 </h2>
@@ -2129,6 +2144,15 @@ Age: 24
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Unit-10---Recursion">
+<a class="anchor" href="#Unit-10---Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 10 - Recursion<a class="anchor-link" href="#Unit-10---Recursion"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Recursion">
 <a class="anchor" href="#Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recursion<a class="anchor-link" href="#Recursion"> </a>
 </h2>
@@ -2365,6 +2389,74 @@ Age: 24
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Unit-7-ArrayLists">
+<a class="anchor" href="#Unit-7-ArrayLists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 7 ArrayLists<a class="anchor-link" href="#Unit-7-ArrayLists"> </a>
+</h2>
+<ul>
+<li>mutable and has object references</li>
+<li>
+<p>can change their size dynamically unlinke arrays</p>
+</li>
+<li>
+<p>traverse array lists with loops</p>
+</li>
+<li>sort in ascending or descending order</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//define ArrayList</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="c1">//add to ArrayList</span>
+<span class="n">numbers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">numbers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+<span class="n">numbers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">numbers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+
+<span class="c1">//hasCode and sorting arrayLists</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Before Sorting: "</span><span class="o">+</span> <span class="n">numbers</span> <span class="o">+</span> <span class="s">", the hashcode is "</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">.</span><span class="na">hashCode</span><span class="p">());</span>
+<span class="n">Collections</span><span class="p">.</span><span class="na">sort</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="n">Collections</span><span class="p">.</span><span class="na">reverseOrder</span><span class="p">());</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"After Sorting: "</span><span class="o">+</span> <span class="n">numbers</span> <span class="o">+</span> <span class="s">", the hashcode is "</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">.</span><span class="na">hashCode</span><span class="p">());</span>
+<span class="n">Collections</span><span class="p">.</span><span class="na">swap</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numbers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"After Sorting and Swapping first and last numbers: "</span><span class="o">+</span> <span class="n">numbers</span> <span class="o">+</span> <span class="s">", the hashcode is "</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">.</span><span class="na">hashCode</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Before Sorting: [1, 4, 2, 3], the hashcode is 957221
+After Sorting: [4, 3, 2, 1], the hashcode is 1045631
+After Sorting and Swapping first and last numbers: [1, 3, 2, 4], the hashcode is 956261
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
