@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 9 HW - Meena Annamalai | Meena Annamalai</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 9 HW - Meena Annamalai" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="2D Arrays" />
+<meta property="og:description" content="2D Arrays" />
+<link rel="canonical" href="https://mann223.github.io/fastpages/jupyter/2022/12/14/unit9hw.html" />
+<meta property="og:url" content="https://mann223.github.io/fastpages/jupyter/2022/12/14/unit9hw.html" />
+<meta property="og:site_name" content="Meena Annamalai" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-14T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unit 9 HW - Meena Annamalai" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-14T00:00:00-06:00","datePublished":"2022-12-14T00:00:00-06:00","description":"2D Arrays","headline":"Unit 9 HW - Meena Annamalai","mainEntityOfPage":{"@type":"WebPage","@id":"https://mann223.github.io/fastpages/jupyter/2022/12/14/unit9hw.html"},"url":"https://mann223.github.io/fastpages/jupyter/2022/12/14/unit9hw.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://mann223.github.io/fastpages/feed.xml" title="Meena Annamalai" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Meena Annamalai</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/menu/frontend">Frontend</a><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/categories/">Tags</a><a class="page-link" href="/fastpages/vocab/">APCSA Vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 9 HW  - Meena Annamalai</h1><p class="page-description">2D Arrays</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-14T00:00:00-06:00" itemprop="datePublished">
+        Dec 14, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/fastpages/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/MAnn223/fastpages/tree/master/_notebooks/2022-12-14-unit9hw.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/fastpages/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/MAnn223/fastpages/master?filepath=_notebooks%2F2022-12-14-unit9hw.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/fastpages/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/MAnn223/fastpages/blob/master/_notebooks/2022-12-14-unit9hw.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/fastpages/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FMAnn223%2Ffastpages%2Fblob%2Fmaster%2F_notebooks%2F2022-12-14-unit9hw.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/fastpages/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Part-1">Part 1 </a></li>
+<li class="toc-entry toc-h2"><a href="#Inheritance-(To-do)">Inheritance (To do) </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-14-unit9hw.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-1">
+<a class="anchor" href="#Part-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 1<a class="anchor-link" href="#Part-1"> </a>
+</h2>
+<ul>
+<li>Create a world cup superclass with properties of your choice and subclasses for five teams which inherits those properties</li>
+<li>Write a constructor for one of those subclasses</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">worldCup</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">teamName</span><span class="p">;</span> 
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">headCoach</span><span class="p">;</span> 
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">captain</span><span class="p">;</span> 
+
+    <span class="kd">public</span> <span class="nf">worldCup</span><span class="p">(</span><span class="n">String</span> <span class="n">teamName</span><span class="p">,</span> <span class="n">String</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">String</span> <span class="n">captain</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">teamName</span> <span class="o">=</span> <span class="n">teamName</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">headCoach</span> <span class="o">=</span> <span class="n">headCoach</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">captain</span> <span class="o">=</span> <span class="n">captain</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getTeamInfo</span><span class="p">(){</span>
+        <span class="n">String</span> <span class="n">teamInfo</span> <span class="o">=</span> <span class="s">"Team: "</span> <span class="o">+</span> <span class="n">teamName</span> <span class="o">+</span> <span class="s">", Head Coach: "</span> <span class="o">+</span> <span class="n">headCoach</span> <span class="o">+</span> <span class="s">", Captain: "</span> <span class="o">+</span> <span class="n">captain</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">teamInfo</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Brazil</span> <span class="kd">extends</span> <span class="n">worldCup</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">Brazil</span><span class="p">(</span><span class="n">String</span> <span class="n">teamName</span><span class="p">,</span> <span class="n">String</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">String</span> <span class="n">captain</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">teamName</span><span class="p">,</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">captain</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">US</span> <span class="kd">extends</span> <span class="n">worldCup</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">US</span><span class="p">(</span><span class="n">String</span> <span class="n">teamName</span><span class="p">,</span> <span class="n">String</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">String</span> <span class="n">captain</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">teamName</span><span class="p">,</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">captain</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">France</span> <span class="kd">extends</span> <span class="n">worldCup</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">France</span><span class="p">(</span><span class="n">String</span> <span class="n">teamName</span><span class="p">,</span> <span class="n">String</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">String</span> <span class="n">captain</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">teamName</span><span class="p">,</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">captain</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Argentina</span> <span class="kd">extends</span> <span class="n">worldCup</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">Argentina</span><span class="p">(</span><span class="n">String</span> <span class="n">teamName</span><span class="p">,</span> <span class="n">String</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">String</span> <span class="n">captain</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">teamName</span><span class="p">,</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">captain</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Portugal</span> <span class="kd">extends</span> <span class="n">worldCup</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">Portugal</span><span class="p">(</span><span class="n">String</span> <span class="n">teamName</span><span class="p">,</span> <span class="n">String</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">String</span> <span class="n">captain</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">teamName</span><span class="p">,</span> <span class="n">headCoach</span><span class="p">,</span> <span class="n">captain</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Tester</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="n">Brazil</span> <span class="n">brazilTeam</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Brazil</span><span class="p">(</span><span class="s">"Brazil"</span><span class="p">,</span> <span class="s">"Tite"</span><span class="p">,</span> <span class="s">"Vacant"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">brazilTeam</span><span class="p">.</span><span class="na">getTeamInfo</span><span class="p">());</span>
+
+        <span class="n">US</span> <span class="n">usTeam</span> <span class="o">=</span> <span class="k">new</span> <span class="n">US</span><span class="p">(</span><span class="s">"US"</span><span class="p">,</span> <span class="s">"Gregg Berhalter"</span><span class="p">,</span> <span class="s">"Tyler Adams"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">usTeam</span><span class="p">.</span><span class="na">getTeamInfo</span><span class="p">());</span>
+
+        <span class="n">France</span> <span class="n">franceTeam</span> <span class="o">=</span> <span class="k">new</span> <span class="n">France</span><span class="p">(</span><span class="s">"France"</span><span class="p">,</span> <span class="s">"Didier Deschamps"</span><span class="p">,</span> <span class="s">"Hugo Lloris"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">franceTeam</span><span class="p">.</span><span class="na">getTeamInfo</span><span class="p">());</span>
+
+        <span class="n">Argentina</span> <span class="n">argentinaTeam</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Argentina</span><span class="p">(</span><span class="s">"Argentina"</span><span class="p">,</span> <span class="s">"Lionel Scaloni "</span><span class="p">,</span> <span class="s">"Lionel Messi"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">argentinaTeam</span><span class="p">.</span><span class="na">getTeamInfo</span><span class="p">());</span>
+
+        <span class="n">Portugal</span> <span class="n">portugalTeam</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Portugal</span><span class="p">(</span><span class="s">"Portugal"</span><span class="p">,</span> <span class="s">"Fernando Santos"</span><span class="p">,</span> <span class="s">"Cristiano Ronaldo"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">portugalTeam</span><span class="p">.</span><span class="na">getTeamInfo</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Tester</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Team: Brazil, Head Coach: Tite, Captain: Vacant
+Team: US, Head Coach: Gregg Berhalter, Captain: Tyler Adams
+Team: France, Head Coach: Didier Deschamps, Captain: Hugo Lloris
+Team: Argentina, Head Coach: Lionel Scaloni , Captain: Lionel Messi
+Team: Portugal, Head Coach: Fernando Santos, Captain: Cristiano Ronaldo
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Inheritance-(To-do)">
+<a class="anchor" href="#Inheritance-(To-do)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inheritance (To do)<a class="anchor-link" href="#Inheritance-(To-do)"> </a>
+</h2>
+<ul>
+<li>Add a getAge method in the Person super class</li>
+<li>Create a new subclass Student with additional members of your choice to personalize the Student class</li>
+<li>Create a new subclass Teacher with additiona members of your choice</li>
+<li>Override the toString method using the @Override to print a Student and teacher object with new members</li>
+<li>Print the student and teacher.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.time.LocalDate</span><span class="p">;</span>  
+<span class="kn">import</span> <span class="nn">java.time.Period</span><span class="p">;</span> 
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">birthday</span><span class="p">;</span>
+ 
+    <span class="kd">public</span> <span class="nf">Person</span> <span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="n">String</span> <span class="n">birthday</span><span class="p">){</span>
+       <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+       <span class="k">this</span><span class="p">.</span><span class="na">birthday</span> <span class="o">=</span> <span class="n">birthday</span><span class="p">;</span>
+    <span class="p">}</span>
+ 
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">(){</span>
+       <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="p">(){</span>
+        <span class="n">LocalDate</span> <span class="n">dob</span> <span class="o">=</span> <span class="n">LocalDate</span><span class="p">.</span><span class="na">parse</span><span class="p">(</span><span class="n">birthday</span><span class="p">);</span>
+        <span class="n">LocalDate</span> <span class="n">today</span> <span class="o">=</span> <span class="n">LocalDate</span><span class="p">.</span><span class="na">now</span><span class="p">();</span>  
+        <span class="k">return</span> <span class="n">Period</span><span class="p">.</span><span class="na">between</span><span class="p">(</span><span class="n">dob</span><span class="p">,</span> <span class="n">today</span><span class="p">).</span><span class="na">getYears</span><span class="p">();</span>
+    <span class="p">}</span>
+ <span class="p">}</span>
+ 
+ <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="n">Person</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">grade</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">gpa</span><span class="p">;</span>
+ 
+    <span class="kd">public</span> <span class="nf">Student</span> <span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="n">String</span> <span class="n">birthday</span><span class="p">,</span> <span class="kt">int</span> <span class="n">grade</span><span class="p">,</span> <span class="kt">double</span> <span class="n">gpa</span><span class="p">)</span> <span class="p">{</span>
+       <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">birthday</span><span class="p">);</span>
+       <span class="k">this</span><span class="p">.</span><span class="na">grade</span> <span class="o">=</span> <span class="n">grade</span><span class="p">;</span>
+       <span class="k">this</span><span class="p">.</span><span class="na">gpa</span> <span class="o">=</span> <span class="n">gpa</span><span class="p">;</span>
+    <span class="p">}</span>
+ 
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getGrade</span><span class="p">(){</span>
+       <span class="k">return</span> <span class="n">grade</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="s">"name: "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">" bday: "</span> <span class="o">+</span> <span class="n">birthday</span> <span class="o">+</span> <span class="s">" grade: "</span> <span class="o">+</span> <span class="n">grade</span> <span class="o">+</span> <span class="s">" gpa: "</span> <span class="o">+</span> <span class="n">gpa</span><span class="p">;</span>
+    <span class="p">}</span>
+ <span class="p">}</span>
+
+ <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teacher</span> <span class="kd">extends</span> <span class="n">Person</span> <span class="p">{</span>
+   <span class="kd">private</span> <span class="n">String</span> <span class="n">subject</span><span class="p">;</span>
+
+   <span class="kd">public</span> <span class="nf">Teacher</span> <span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="n">String</span> <span class="n">birthday</span><span class="p">,</span> <span class="n">String</span> <span class="n">subject</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">birthday</span><span class="p">);</span>
+      <span class="k">this</span><span class="p">.</span><span class="na">subject</span> <span class="o">=</span> <span class="n">subject</span><span class="p">;</span>
+   <span class="p">}</span>
+
+   <span class="nd">@Override</span>
+   <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">(){</span>
+      <span class="k">return</span> <span class="s">"name: "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">" bday: "</span> <span class="o">+</span> <span class="n">birthday</span> <span class="o">+</span> <span class="s">" subject: "</span> <span class="o">+</span> <span class="n">subject</span><span class="p">;</span>
+  <span class="p">}</span>
+ <span class="p">}</span>
+
+ <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Tester</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="o">[]</span> <span class="n">args</span><span class="p">){</span> 
+        <span class="n">Person</span> <span class="n">bob</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="p">(</span><span class="s">"bob"</span><span class="p">,</span> <span class="s">"2000-01-01"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bob</span><span class="p">.</span><span class="na">name</span> <span class="o">+</span> <span class="s">"'s age: "</span> <span class="o">+</span><span class="n">bob</span><span class="p">.</span><span class="na">getAge</span><span class="p">());</span>
+
+        <span class="n">Student</span> <span class="n">joe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">"joe"</span><span class="p">,</span> <span class="s">"2003-01-01"</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">joe</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
+
+        <span class="n">Teacher</span> <span class="n">bobby</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Teacher</span><span class="p">(</span><span class="s">"mr. bobby"</span><span class="p">,</span> <span class="s">"1983-01-01"</span><span class="p">,</span> <span class="s">"English"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">bobby</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
+    <span class="p">}</span>
+ <span class="p">}</span>
+
+ <span class="n">Tester</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>bob's age: 22
+name: joe bday: 2003-01-01 grade: 5 gpa: 3.8
+name: mr. bobby bday: 1983-01-01 subject: English
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="MAnn223/fastpages"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/fastpages/jupyter/2022/12/14/unit9hw.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Meena&#39;s Website</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/jekyll/jekyll" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/fastpages/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/jekyllrb" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/fastpages/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
