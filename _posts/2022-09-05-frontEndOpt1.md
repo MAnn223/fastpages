@@ -1,6 +1,6 @@
 ---
 title: Javascript Hacks 
-layout: default
+layout: base
 description: Javascript/HTML and UI Screens with data
 permalink: /frontend/opt1
 categories: [markdown]
