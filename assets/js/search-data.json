@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Sorting Notes",
-            "content": "toString() | Selection sort Linear sort algorithm as it moves from index of 0 to index of n-1 | In the inner loop which is a second linear loop it compares two elements and notes which is smallest, after cycling to the end it swaps the smallest number to beginning position in the round. | Big O Complexity n squared | . | Insertion Sort | Sorts loop partially at a time until the whole list is sorted | .",
+            "content": "toString() | Selection sort Linear sort algorithm as it moves from index of 0 to index of n-1 | In the inner loop which is a second linear loop it compares two elements and notes which is smallest, after cycling to the end it swaps the smallest number to beginning position in the round. | Big O Complexity n squared | . | Insertion Sort Sorts loop partially at a time until the whole list is sorted | Big O Complexity n squared | . | Merge Sort Divides the array into two different groups recursively | Big O Complexity nlog(n) | . | .",
             "url": "https://mann223.github.io/fastpages/jupyter/2023/03/21/sortingNotes.html",
             "relUrl": "/jupyter/2023/03/21/sortingNotes.html",
             "date": " • Mar 21, 2023"
