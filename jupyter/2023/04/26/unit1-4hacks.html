@@ -387,32 +387,91 @@ This car is an affordable car
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
 
-<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">Scanner</span> <span class="n">myObj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>  <span class="c1">// Create a Scanner object</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Enter number of cars you own: "</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">numCars</span> <span class="o">=</span> <span class="n">myObj</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span> 
-    <span class="c1">//System.out.println(numCars); </span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Car2</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">make</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">model</span><span class="p">;</span>
 
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numCars</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Enter car model for car"</span> <span class="o">+</span> <span class="p">);</span>
-        <span class="n">String</span> <span class="n">carModel</span> <span class="o">=</span> <span class="n">myObj</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span> 
-        <span class="c1">//System.out.println(numCars); </span>
-
+    <span class="kd">public</span> <span class="nf">Car2</span><span class="p">(</span><span class="n">String</span> <span class="n">make</span><span class="p">,</span> <span class="n">String</span> <span class="n">model</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">make</span> <span class="o">=</span> <span class="n">make</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">model</span> <span class="o">=</span> <span class="n">model</span><span class="p">;</span>
     <span class="p">}</span>
-    
 
-<span class="k">try</span> <span class="p">{</span>
-    <span class="n">Car</span> <span class="n">car</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car</span><span class="p">(</span><span class="s">"Toyota"</span><span class="p">,</span> <span class="mi">2020</span><span class="p">);</span> <span class="c1">// Creating a car object</span>
-    <span class="n">car</span><span class="p">.</span><span class="na">displayCarInfo</span><span class="p">();</span> <span class="c1">// Displaying car information</span>
-    <span class="kt">int</span> <span class="n">speed</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">/</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// Trying to divide by zero to simulate an error</span>
-<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">ArithmeticException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Error: Division by zero!"</span><span class="p">);</span> <span class="c1">// Catching and handling the exception</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">displayCarInfo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Make: "</span> <span class="o">+</span> <span class="n">make</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Model: "</span> <span class="o">+</span> <span class="n">model</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="n">Scanner</span> <span class="n">myObj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>  
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter number of cars you own: "</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">numCars</span> <span class="o">=</span> <span class="n">myObj</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span> 
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numCars</span><span class="p">);</span>
+        <span class="n">myObj</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+        <span class="n">Car2</span><span class="o">[]</span> <span class="n">listOfCars2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car2</span><span class="o">[</span><span class="n">numCars</span><span class="o">]</span><span class="p">;</span>
+
+        <span class="k">while</span> <span class="p">(</span><span class="n">numCars</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numCars</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter make of car for car"</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">": "</span><span class="p">);</span>
+                <span class="n">String</span> <span class="n">carMake</span> <span class="o">=</span> <span class="n">myObj</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span> 
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">carMake</span><span class="p">);</span>
+
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter model of car for car"</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">": "</span><span class="p">);</span>
+                <span class="n">String</span> <span class="n">carModel</span> <span class="o">=</span> <span class="n">myObj</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span> 
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">carModel</span> <span class="o">+</span> <span class="s">"\n"</span><span class="p">);</span>
+
+                <span class="n">Car2</span> <span class="n">car</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car2</span><span class="p">(</span><span class="n">carMake</span><span class="p">,</span> <span class="n">carModel</span><span class="p">);</span>
+                <span class="n">listOfCars2</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">car</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">listOfCars2</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Car "</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">": "</span><span class="p">);</span>
+            <span class="n">listOfCars2</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">displayCarInfo</span><span class="p">();</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"\n"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">InputMismatchException</span> <span class="n">e1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Error in input type!"</span><span class="p">);</span>
+    <span class="p">}</span> 
+    <span class="p">}</span>
 <span class="p">}</span>
-<span class="p">}</span>
-<span class="n">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+
+<span class="n">Car2</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Enter number of cars you own: 2
+Enter make of car for car1: Toyota
+Enter model of car for car1: Camry
+
+Enter make of car for car2: Ford
+Enter model of car for car2: Mustang
+
+Car 1: 
+Make: Toyota
+Model: Camry
+
+
+Car 2: 
+Make: Ford
+Model: Mustang
+
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
